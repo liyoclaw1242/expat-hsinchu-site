@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: [],
     },
-    sitemap: "https://expathome-hsinchu.vercel.app/sitemap.xml",
+    sitemap: "https://www.easyrents.xyz/sitemap.xml",
   };
 }

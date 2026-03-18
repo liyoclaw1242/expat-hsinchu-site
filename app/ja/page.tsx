@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   description:
     "新竹科学工業園区（竹科）に勤務する駐在員向けの賃貸・住宅管理サービス。日本語完全対応。ASML、東京エレクトロン、ラムリサーチ等の企業の駐在員実績多数。竹北高鐵エリアの厳選物件、入居前検査、三ヶ国語契約。",
   alternates: {
-    canonical: "https://expathome-hsinchu.vercel.app/ja",
+    canonical: "https://www.easyrents.xyz/ja",
     languages: {
-      "zh-TW": "https://expathome-hsinchu.vercel.app",
-      "en-US": "https://expathome-hsinchu.vercel.app/en",
-      "ja-JP": "https://expathome-hsinchu.vercel.app/ja",
+      "zh-TW": "https://www.easyrents.xyz",
+      "en-US": "https://www.easyrents.xyz/en",
+      "ja-JP": "https://www.easyrents.xyz/ja",
     },
   },
 };

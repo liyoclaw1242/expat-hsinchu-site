@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "Hsinchu semiconductor expat housing",
   ],
   alternates: {
-    canonical: "https://expathome-hsinchu.vercel.app/blog/asml-employee-housing-hsinchu",
+    canonical: "https://www.easyrents.xyz/blog/asml-employee-housing-hsinchu",
   },
 };
 

@@ -6,7 +6,7 @@ import { Bed, Ruler, Elevator, Car, ArrowRight } from "@phosphor-icons/react/dis
 export const metadata: Metadata = {
   title: "精選房源 | 竹北外商公寓 | ExpatHome Hsinchu",
   description: "ExpatHome Hsinchu 精選竹北外商公寓房源。高鐵特區、關埔重劃區精選物件，英語日語服務，適合竹科外派人員。",
-  alternates: { canonical: "https://expathome-hsinchu.vercel.app/properties" },
+  alternates: { canonical: "https://www.easyrents.xyz/properties" },
 };
 
 const properties = [

@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   description:
     "Hsinchu's specialist expat housing and property management service. Full English support for ASML, Applied Materials, Lam Research and all Hsinchu Science Park expats. Bilingual lease, pre-move-in inspection, relocation agent partnerships.",
   alternates: {
-    canonical: "https://expathome-hsinchu.vercel.app/en",
+    canonical: "https://www.easyrents.xyz/en",
     languages: {
-      "zh-TW": "https://expathome-hsinchu.vercel.app",
-      "en-US": "https://expathome-hsinchu.vercel.app/en",
-      "ja-JP": "https://expathome-hsinchu.vercel.app/ja",
+      "zh-TW": "https://www.easyrents.xyz",
+      "en-US": "https://www.easyrents.xyz/en",
+      "ja-JP": "https://www.easyrents.xyz/ja",
     },
   },
 };

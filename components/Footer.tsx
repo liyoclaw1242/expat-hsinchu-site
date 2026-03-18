@@ -80,7 +80,7 @@ export default function Footer() {
           "@type": "LocalBusiness",
           name: "ExpatHome Hsinchu",
           description: "新竹外商租屋代管服務，英日中三語，專為竹科外派人員服務",
-          url: "https://expathome-hsinchu.vercel.app",
+          url: "https://www.easyrents.xyz",
           address: { "@type": "PostalAddress", addressLocality: "新竹縣竹北市", addressCountry: "TW" },
           geo: { "@type": "GeoCoordinates", latitude: 24.8388, longitude: 120.9972 },
           areaServed: ["新竹市", "新竹縣", "竹北市"],

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "ExpatHome Hsinchu | 新竹外商租屋專家 | 竹科外派住宅服務",
   description:
     "新竹最專業的外商租屋代管服務。英語・日語・中文三語全程服務，專為 ASML、竹科外派人員量身打造。竹北高鐵特區精選住宅，入住保障，與 Relocation Agent 深度合作。",
-  alternates: { canonical: "https://expathome-hsinchu.vercel.app" },
+  alternates: { canonical: "https://www.easyrents.xyz" },
 };
 
 const features = [
@@ -113,7 +113,7 @@ export default function HomePage() {
     "@type": "LocalBusiness",
     name: "ExpatHome Hsinchu",
     description: "新竹外商租屋代管，英日中三語服務，專為竹科外派人員",
-    url: "https://expathome-hsinchu.vercel.app",
+    url: "https://www.easyrents.xyz",
     areaServed: ["新竹市", "新竹縣", "竹北市"],
     availableLanguage: ["Chinese", "English", "Japanese"],
   };

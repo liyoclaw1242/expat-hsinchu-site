@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title: "代管服務內容與費用 | ExpatHome Hsinchu 新竹外商租屋代管",
   description:
     "ExpatHome Hsinchu 全方位房屋代管服務：找租客、驗屋、三語合約、收租管理、維修協調。透明費用，專為外商外派人員設計。",
-  alternates: { canonical: "https://expathome-hsinchu.vercel.app/services" },
+  alternates: { canonical: "https://www.easyrents.xyz/services" },
 };
 
 const landlordServices = [

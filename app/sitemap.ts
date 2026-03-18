@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://expathome-hsinchu.vercel.app";
+  const baseUrl = "https://www.easyrents.xyz";
 
   return [
     // Language roots

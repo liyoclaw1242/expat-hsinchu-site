@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "zh_TW",
     alternateLocale: ["en_US", "ja_JP"],
-    url: "https://expathome-hsinchu.vercel.app",
+    url: "https://www.easyrents.xyz",
     siteName: "ExpatHome Hsinchu",
     title: "ExpatHome Hsinchu | 新竹外商租屋專家",
     description:
@@ -73,11 +73,11 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://expathome-hsinchu.vercel.app",
+    canonical: "https://www.easyrents.xyz",
     languages: {
-      "zh-TW": "https://expathome-hsinchu.vercel.app",
-      "en-US": "https://expathome-hsinchu.vercel.app/en",
-      "ja-JP": "https://expathome-hsinchu.vercel.app/ja",
+      "zh-TW": "https://www.easyrents.xyz",
+      "en-US": "https://www.easyrents.xyz/en",
+      "ja-JP": "https://www.easyrents.xyz/ja",
     },
   },
 };

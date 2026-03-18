@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "新竹英語租屋服務",
   ],
   alternates: {
-    canonical: "https://expathome-hsinchu.vercel.app/blog/hsinchu-expat-housing-guide",
+    canonical: "https://www.easyrents.xyz/blog/hsinchu-expat-housing-guide",
   },
 };
 
@@ -26,7 +26,7 @@ export default function HsinchuExpatGuide() {
     datePublished: "2025-03-18",
     dateModified: "2025-03-18",
     author: { "@type": "Organization", name: "ExpatHome Hsinchu" },
-    publisher: { "@type": "Organization", name: "ExpatHome Hsinchu", url: "https://expathome-hsinchu.vercel.app" },
+    publisher: { "@type": "Organization", name: "ExpatHome Hsinchu", url: "https://www.easyrents.xyz" },
     inLanguage: "zh-TW",
     about: { "@type": "Place", name: "新竹", containsPlace: "竹北市" },
     keywords: "新竹外派租屋, 竹科外籍人員住宅, Hsinchu expat rental",

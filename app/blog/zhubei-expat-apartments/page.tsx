@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "新竹外商住宅推薦",
   ],
   alternates: {
-    canonical: "https://expathome-hsinchu.vercel.app/blog/zhubei-expat-apartments",
+    canonical: "https://www.easyrents.xyz/blog/zhubei-expat-apartments",
   },
 };
 

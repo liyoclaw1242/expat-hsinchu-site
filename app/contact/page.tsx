@@ -4,7 +4,7 @@ import { ChatCircle, Phone, EnvelopeSimple, ArrowRight } from "@phosphor-icons/r
 export const metadata: Metadata = {
   title: "聯絡我們 | ExpatHome Hsinchu",
   description: "聯絡 ExpatHome Hsinchu。英語、日語、中文均可。LINE、WhatsApp、Email 多管道聯絡，免費諮詢新竹外商租屋服務。",
-  alternates: { canonical: "https://expathome-hsinchu.vercel.app/contact" },
+  alternates: { canonical: "https://www.easyrents.xyz/contact" },
 };
 
 const channels = [

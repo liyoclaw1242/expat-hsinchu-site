@@ -5,7 +5,7 @@ import { Target, Handshake, ShieldCheck, UsersThree, ArrowRight } from "@phospho
 export const metadata: Metadata = {
   title: "關於我們 | ExpatHome Hsinchu | 新竹外商租屋專家",
   description: "ExpatHome Hsinchu 的故事：為什麼我們專注外商租屋代管，我們的使命、服務範圍與語言支援。",
-  alternates: { canonical: "https://expathome-hsinchu.vercel.app/about" },
+  alternates: { canonical: "https://www.easyrents.xyz/about" },
 };
 
 const differentiators = [
