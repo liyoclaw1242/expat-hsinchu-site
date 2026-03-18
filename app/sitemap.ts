@@ -4,6 +4,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.easyrents.xyz";
 
   return [
+    // EN sub-pages
+    { url: `${baseUrl}/en/services`, lastModified: new Date("2025-03-18"), changeFrequency: "monthly" as const, priority: 0.8 },
+    { url: `${baseUrl}/en/properties`, lastModified: new Date("2025-03-18"), changeFrequency: "weekly" as const, priority: 0.8 },
+    { url: `${baseUrl}/en/contact`, lastModified: new Date("2025-03-18"), changeFrequency: "monthly" as const, priority: 0.8 },
+    { url: `${baseUrl}/en/about`, lastModified: new Date("2025-03-18"), changeFrequency: "monthly" as const, priority: 0.7 },
     // Language roots
     {
       url: `${baseUrl}/en`,
