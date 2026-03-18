@@ -51,9 +51,9 @@ export default function Footer() {
             <h3 className="text-[11px] font-semibold uppercase tracking-widest mb-4" style={{ color: "#9aa0a8" }}>聯絡</h3>
             <ul className="space-y-3">
               {[
-                { Icon: ChatCircle, label: "LINE: @expathome-hsinchu" },
-                { Icon: Phone, label: "WhatsApp: +886-xxx-xxx" },
-                { Icon: EnvelopeSimple, label: "info@expathome-hsinchu.com" },
+                { Icon: ChatCircle, label: "LINE: @198evsjq" },
+                { Icon: Phone, label: "WhatsApp: 0989-059-618" },
+                { Icon: EnvelopeSimple, label: "info@198evsjq.com" },
               ].map(({ Icon, label }) => (
                 <li key={label} className="flex items-center gap-2.5 text-sm" style={{ color: "oklch(65% 0.015 178)" }}>
                   <Icon size={15} weight="regular" style={{ color: "#0F766E", flexShrink: 0 }} />

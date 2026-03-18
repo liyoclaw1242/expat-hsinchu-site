@@ -11,9 +11,9 @@ export const metadata: Metadata = {
 };
 
 const channels = [
-  { Icon: ChatCircle, title: "LINE", handle: "@expathome-hsinchu", desc: "Fastest response — usually within 1 hour", cta: "Chat on LINE", href: "https://line.me/ti/p/%40expathome-hsinchu", lang: "English · 日本語 · 中文" },
-  { Icon: Phone, title: "WhatsApp", handle: "+886-xxx-xxx-xxx", desc: "Preferred by most expats", cta: "WhatsApp Us", href: "https://wa.me/886xxxxxxxxx", lang: "English · 日本語 · 中文" },
-  { Icon: EnvelopeSimple, title: "Email", handle: "info@expathome-hsinchu.com", desc: "For detailed enquiries and documents", cta: "Send Email", href: "mailto:info@expathome-hsinchu.com", lang: "English · 日本語 · 中文" },
+  { Icon: ChatCircle, title: "LINE", handle: "@198evsjq", desc: "Fastest response — usually within 1 hour", cta: "Chat on LINE", href: "https://line.me/R/ti/p/@198evsjq", lang: "English · 日本語 · 中文" },
+  { Icon: Phone, title: "WhatsApp", handle: "0989-059-618", desc: "Preferred by most expats", cta: "WhatsApp Us", href: "tel:0989059618", lang: "English · 日本語 · 中文" },
+  { Icon: EnvelopeSimple, title: "Email", handle: "info@198evsjq.com", desc: "For detailed enquiries and documents", cta: "Send Email", href: "mailto:info@198evsjq.com", lang: "English · 日本語 · 中文" },
 ];
 
 const faqs = [
