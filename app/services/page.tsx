@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -26,13 +27,30 @@ export default function ServicesPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <div className="max-w-5xl mx-auto px-4 py-16">
-        <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">服務內容</h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            從找租客到退租，全程代管。房東省心，租客安心。
-          </p>
+      {/* Services Hero Banner */}
+      <div className="relative h-72 md:h-96 overflow-hidden bg-slate-900">
+        <Image
+          src="/images/services-banner.png"
+          alt="ExpatHome Hsinchu 專業代管服務 — 真人服務，讓您安心"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/85 via-slate-900/60 to-slate-900/30" />
+        <div className="absolute inset-0 flex items-center px-8 md:px-16">
+          <div className="max-w-xl">
+            <p className="text-indigo-300 text-sm font-semibold uppercase tracking-wider mb-3">真人服務・三語溝通</p>
+            <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
+              服務內容
+            </h1>
+            <p className="text-slate-300 text-lg">
+              從找租客到退租，全程代管。房東省心，租客安心。
+            </p>
+          </div>
         </div>
+      </div>
+
+      <div className="max-w-5xl mx-auto px-4 py-16">
 
         {/* For Landlords */}
         <section className="mb-16">

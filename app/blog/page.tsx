@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -54,8 +55,13 @@ export default function BlogPage() {
         {posts.map((post) => (
           <Link key={post.href} href={post.href} className="group block">
             <article className="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow p-8 flex gap-6">
-              <div className="bg-indigo-100 w-20 h-20 rounded-xl flex-shrink-0 flex items-center justify-center text-3xl">
-                📖
+              <div className="relative w-20 h-20 rounded-xl flex-shrink-0 overflow-hidden">
+                <Image
+                  src="/images/blog-cover.png"
+                  alt={post.title}
+                  fill
+                  className="object-cover object-center"
+                />
               </div>
               <div className="flex-1">
                 <div className="flex flex-wrap items-center gap-2 text-xs text-gray-400 mb-2">

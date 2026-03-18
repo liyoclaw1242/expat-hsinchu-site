@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -63,13 +64,29 @@ const properties = [
 
 export default function PropertiesPage() {
   return (
+    <>
+    {/* Properties Hero Banner */}
+    <div className="relative h-64 md:h-80 overflow-hidden bg-slate-900">
+      <Image
+        src="/images/properties-banner.png"
+        alt="竹北精裝公寓 — 現代設計，完美居住體驗"
+        fill
+        className="object-cover object-center"
+        priority
+      />
+      <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/50 to-transparent" />
+      <div className="absolute inset-0 flex items-center px-8 md:px-16">
+        <div>
+          <p className="text-indigo-300 text-sm font-semibold uppercase tracking-wider mb-2">竹北精選房源</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-3">精選房源</h1>
+          <p className="text-slate-300">每間都經過嚴格篩選，符合外商外派人員標準</p>
+        </div>
+      </div>
+    </div>
+
     <div className="max-w-6xl mx-auto px-4 py-16">
-      <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">精選房源</h1>
-        <p className="text-xl text-gray-600">
-          每間都經過我們嚴格篩選，符合外商外派人員標準
-        </p>
-        <div className="mt-4 inline-block bg-yellow-50 border border-yellow-200 rounded-full px-4 py-1 text-sm text-yellow-700">
+      <div className="mb-8 flex justify-center">
+        <div className="inline-block bg-yellow-50 border border-yellow-200 rounded-full px-4 py-1 text-sm text-yellow-700">
           ⚠️ 以下為示範房源。實際可用房源請聯絡我們詢問。
         </div>
       </div>
@@ -77,10 +94,16 @@ export default function PropertiesPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
         {properties.map((p) => (
           <article key={p.id} className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden hover:shadow-md transition-shadow">
-            {/* Property Image Placeholder */}
-            <div className="bg-indigo-100 h-48 flex items-center justify-center relative">
-              <span className="text-6xl">🏢</span>
-              <span className={`absolute top-4 left-4 ${p.badgeColor} text-white text-xs font-bold px-3 py-1 rounded-full`}>
+            {/* Property Image */}
+            <div className="relative h-48 overflow-hidden">
+              <Image
+                src="/images/properties-banner.png"
+                alt={p.title}
+                fill
+                className="object-cover object-center"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+              <span className={`absolute top-4 left-4 ${p.badgeColor} text-white text-xs font-bold px-3 py-1 rounded-full shadow`}>
                 {p.badge}
               </span>
             </div>
@@ -135,5 +158,6 @@ export default function PropertiesPage() {
         </Link>
       </div>
     </div>
+    </>
   );
 }

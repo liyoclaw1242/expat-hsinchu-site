@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -124,11 +125,18 @@ export default function HomePage() {
 
       {/* ── HERO ── */}
       <section className="relative bg-[#0f1c3f] overflow-hidden">
-        {/* Background texture */}
-        <div className="absolute inset-0 opacity-30"
-          style={{ backgroundImage: "radial-gradient(circle at 25% 60%, #4f46e5 0%, transparent 50%), radial-gradient(circle at 75% 20%, #7c3aed 0%, transparent 45%)" }} />
-        <div className="absolute inset-0 opacity-10"
-          style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")" }} />
+        {/* Hero background image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/images/hero-banner.png"
+            alt="竹北新竹城市夜景"
+            fill
+            className="object-cover object-center"
+            priority
+          />
+          {/* overlay to ensure text readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0f1c3f]/90 via-[#0f1c3f]/75 to-[#0f1c3f]/40" />
+        </div>
 
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-24 md:py-32">
           {/* Badge */}
@@ -303,9 +311,15 @@ export default function HomePage() {
             {blogPosts.map((post) => (
               <Link key={post.href} href={post.href} className="group block">
                 <article className="h-full bg-white/5 hover:bg-white/10 border border-white/10 rounded-2xl overflow-hidden transition-all duration-200">
-                  <div className="bg-gradient-to-br from-indigo-600/30 to-violet-600/20 h-44 flex flex-col items-center justify-center gap-3">
-                    <span className="text-5xl">{post.emoji}</span>
-                    <span className="text-indigo-300 text-xs font-semibold uppercase tracking-wider">{post.label}</span>
+                  <div className="relative h-44 overflow-hidden">
+                    <Image
+                      src="/images/blog-cover.png"
+                      alt={post.title}
+                      fill
+                      className="object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                    <span className="absolute bottom-3 left-4 text-indigo-300 text-xs font-semibold uppercase tracking-wider">{post.label}</span>
                   </div>
                   <div className="p-6">
                     <div className="flex items-center gap-2 text-xs text-slate-500 mb-3">
