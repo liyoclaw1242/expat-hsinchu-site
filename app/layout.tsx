@@ -51,7 +51,7 @@ export const metadata: Metadata = {
       "新竹最專業的外商租屋代管服務。英日中三語，竹科外派人員首選。",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "易澤居 EasyRent - 新竹外商租屋專家",
