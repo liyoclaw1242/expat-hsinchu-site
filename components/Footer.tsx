@@ -1,34 +1,33 @@
 import Link from "next/link";
+import { Phone, EnvelopeSimple, ChatCircle } from "@phosphor-icons/react/dist/ssr";
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-950 text-white">
+    <footer style={{ background: "#060F0F", color: "#F0FDFA" }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-14">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
 
           {/* Brand */}
-          <div className="col-span-1 md:col-span-2">
-            <Link href="/" className="flex items-center gap-2.5 mb-5 group w-fit">
-              <div className="w-8 h-8 bg-gradient-to-br from-indigo-500 to-violet-600 rounded-lg flex items-center justify-center">
-                <span className="text-white text-sm font-bold">E</span>
-              </div>
+          <div className="md:col-span-2">
+            <Link href="/" className="flex items-center gap-2.5 mb-5 w-fit">
+              <div className="w-8 h-8 rounded-lg flex items-center justify-center text-white text-sm font-bold"
+                style={{ background: "#0F766E" }}>E</div>
               <div className="leading-none">
-                <span className="text-[15px] font-bold text-white tracking-tight">ExpatHome</span>
-                <span className="text-[11px] text-slate-500 block font-medium">Hsinchu</span>
+                <span className="text-[15px] font-semibold tracking-tight text-white">ExpatHome</span>
+                <span className="text-[11px] block font-medium" style={{ color: "#5EEAD4" }}>Hsinchu</span>
               </div>
             </Link>
-            <p className="text-slate-400 text-sm leading-relaxed mb-2">
-              新竹最專業的外商租屋代管服務。<br />
-              英語・日語・中文，全程三語服務。
+            <p className="text-sm leading-relaxed mb-1.5 max-w-[38ch] text-pretty" style={{ color: "oklch(75% 0.015 178)" }}>
+              新竹最專業的外商租屋代管服務。英語・日語・中文，全程三語服務。
             </p>
-            <p className="text-slate-600 text-xs italic">
+            <p className="text-xs italic" style={{ color: "oklch(55% 0.015 178)" }}>
               Your Home in Hsinchu. In English, In Japanese, In Chinese.
             </p>
           </div>
 
           {/* Links */}
           <div>
-            <h3 className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-4">導航</h3>
+            <h3 className="text-[11px] font-semibold uppercase tracking-widest mb-4" style={{ color: "oklch(55% 0.015 178)" }}>導航</h3>
             <ul className="space-y-2.5">
               {[
                 { href: "/services", label: "代管服務" },
@@ -38,7 +37,8 @@ export default function Footer() {
                 { href: "/contact", label: "聯絡我們" },
               ].map((item) => (
                 <li key={item.href}>
-                  <Link href={item.href} className="text-slate-400 hover:text-white text-sm transition-colors">
+                  <Link href={item.href} className="text-sm transition-colors"
+                    style={{ color: "oklch(65% 0.015 178)" }}>
                     {item.label}
                   </Link>
                 </li>
@@ -48,47 +48,46 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-4">聯絡</h3>
-            <ul className="space-y-2.5 text-sm text-slate-400">
-              <li className="flex items-center gap-2">
-                <span className="text-green-400">💬</span> LINE: @expathome-hsinchu
-              </li>
-              <li className="flex items-center gap-2">
-                <span>📱</span> WhatsApp: +886-xxx-xxx
-              </li>
-              <li className="flex items-center gap-2">
-                <span>📧</span> info@expathome-hsinchu.com
-              </li>
-              <li className="text-xs text-slate-600 pt-2">
+            <h3 className="text-[11px] font-semibold uppercase tracking-widest mb-4" style={{ color: "oklch(55% 0.015 178)" }}>聯絡</h3>
+            <ul className="space-y-3">
+              {[
+                { Icon: ChatCircle, label: "LINE: @expathome-hsinchu" },
+                { Icon: Phone, label: "WhatsApp: +886-xxx-xxx" },
+                { Icon: EnvelopeSimple, label: "info@expathome-hsinchu.com" },
+              ].map(({ Icon, label }) => (
+                <li key={label} className="flex items-center gap-2.5 text-sm" style={{ color: "oklch(65% 0.015 178)" }}>
+                  <Icon size={15} weight="regular" style={{ color: "#0F766E", flexShrink: 0 }} />
+                  {label}
+                </li>
+              ))}
+              <li className="text-xs pt-1" style={{ color: "oklch(45% 0.015 178)" }}>
                 週一至週六 09:00–18:00 (GMT+8)
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-slate-600 text-xs">© 2025 ExpatHome Hsinchu. 版權所有。</p>
-          <p className="text-slate-700 text-xs">服務區域：新竹市・新竹縣・竹北市・竹科</p>
+        <div className="mt-12 pt-8 border-t flex flex-col md:flex-row justify-between items-center gap-3"
+          style={{ borderColor: "oklch(25% 0.01 178)" }}>
+          <p className="text-xs" style={{ color: "oklch(40% 0.01 178)" }}>© 2025 ExpatHome Hsinchu. 版權所有。</p>
+          <p className="text-xs" style={{ color: "oklch(40% 0.01 178)" }}>服務區域：新竹市・新竹縣・竹北市・竹科</p>
         </div>
       </div>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            name: "ExpatHome Hsinchu",
-            description: "新竹外商租屋代管服務，英日中三語，專為竹科外派人員服務",
-            url: "https://expathome-hsinchu.vercel.app",
-            address: { "@type": "PostalAddress", addressLocality: "新竹縣竹北市", addressCountry: "TW" },
-            geo: { "@type": "GeoCoordinates", latitude: 24.8388, longitude: 120.9972 },
-            areaServed: ["新竹市", "新竹縣", "竹北市"],
-            availableLanguage: ["Chinese", "English", "Japanese"],
-            openingHours: "Mo-Sa 09:00-18:00",
-          }),
-        }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          name: "ExpatHome Hsinchu",
+          description: "新竹外商租屋代管服務，英日中三語，專為竹科外派人員服務",
+          url: "https://expathome-hsinchu.vercel.app",
+          address: { "@type": "PostalAddress", addressLocality: "新竹縣竹北市", addressCountry: "TW" },
+          geo: { "@type": "GeoCoordinates", latitude: 24.8388, longitude: 120.9972 },
+          areaServed: ["新竹市", "新竹縣", "竹北市"],
+          availableLanguage: ["Chinese", "English", "Japanese"],
+          openingHours: "Mo-Sa 09:00-18:00",
+        }),
+      }} />
     </footer>
   );
 }

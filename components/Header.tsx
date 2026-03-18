@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import { List, X } from "@phosphor-icons/react";
 
 const navItems = [
   { href: "/", label: "首頁" },
@@ -11,89 +12,101 @@ const navItems = [
 ];
 
 export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   return (
-    <header className="bg-white/95 backdrop-blur-md border-b border-slate-100 sticky top-0 z-50 shadow-sm">
+    <header className="bg-white border-b border-teal-100 sticky top-0 z-50"
+      style={{ borderBottomColor: "#99F6E4" }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex items-center justify-between h-16">
 
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5 group">
-            <div className="w-8 h-8 bg-gradient-to-br from-indigo-600 to-violet-600 rounded-lg flex items-center justify-center shadow-sm">
-              <span className="text-white text-sm font-bold">E</span>
+          <Link href="/" className="flex items-center gap-3 group">
+            <div className="w-8 h-8 rounded-lg flex items-center justify-center text-white text-sm font-bold"
+              style={{ background: "#0F766E" }}>
+              E
             </div>
             <div className="leading-none">
-              <span className="text-[15px] font-bold text-slate-900 tracking-tight">ExpatHome</span>
-              <span className="text-[11px] text-slate-400 block font-medium">Hsinchu</span>
+              <span className="text-[15px] font-semibold tracking-tight"
+                style={{ color: "#0A1F1E" }}>ExpatHome</span>
+              <span className="text-[11px] block font-medium"
+                style={{ color: "#0F766E" }}>Hsinchu</span>
             </div>
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-1">
+          <nav className="hidden md:flex items-center gap-0.5">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="px-3.5 py-2 text-[13.5px] font-medium text-slate-600 hover:text-indigo-600 hover:bg-indigo-50 rounded-lg transition-all duration-150"
+                className="px-3.5 py-2 text-[13.5px] font-medium rounded-lg transition-colors duration-150"
+                style={{ color: "#374151" }}
+                onMouseEnter={e => {
+                  (e.target as HTMLElement).style.color = "#0F766E";
+                  (e.target as HTMLElement).style.background = "#F0FDFA";
+                }}
+                onMouseLeave={e => {
+                  (e.target as HTMLElement).style.color = "#374151";
+                  (e.target as HTMLElement).style.background = "transparent";
+                }}
               >
                 {item.label}
               </Link>
             ))}
-            <div className="ml-3 flex items-center gap-2">
-              <Link
-                href="/contact"
-                className="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white text-[13.5px] font-semibold rounded-lg transition-colors shadow-sm"
-              >
-                免費諮詢
-              </Link>
-            </div>
           </nav>
 
-          {/* Language + Mobile */}
           <div className="flex items-center gap-3">
-            <div className="hidden md:flex items-center gap-2 text-[11.5px] text-slate-400 font-medium">
-              <span className="text-slate-700">中</span>
-              <span>/</span>
-              <Link href="/en" className="hover:text-indigo-600 transition-colors">EN</Link>
-              <span>/</span>
-              <Link href="/ja" className="hover:text-indigo-600 transition-colors">日</Link>
+            {/* Language */}
+            <div className="hidden md:flex items-center gap-1.5 text-xs font-medium"
+              style={{ color: "#6B7280" }}>
+              <span style={{ color: "#0F766E", fontWeight: 600 }}>中</span>
+              <span className="opacity-30">/</span>
+              <Link href="/en" className="hover:underline" style={{ color: "#6B7280" }}>EN</Link>
+              <span className="opacity-30">/</span>
+              <Link href="/ja" className="hover:underline" style={{ color: "#6B7280" }}>日</Link>
             </div>
-            <button
-              className="md:hidden p-2 rounded-lg hover:bg-slate-100 transition-colors"
-              onClick={() => setMenuOpen(!menuOpen)}
-              aria-label="Toggle menu"
+
+            {/* CTA */}
+            <Link
+              href="/contact"
+              className="hidden md:inline-flex items-center text-[13.5px] font-semibold px-4 py-2 rounded-lg text-white transition-colors"
+              style={{ background: "#0369A1" }}
             >
-              <svg className="w-5 h-5 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                {menuOpen
-                  ? <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  : <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                }
-              </svg>
+              免費諮詢
+            </Link>
+
+            {/* Mobile toggle */}
+            <button
+              className="md:hidden p-2 rounded-lg transition-colors"
+              onClick={() => setOpen(!open)}
+              aria-label="Toggle menu"
+              style={{ color: "#374151" }}
+            >
+              {open ? <X size={20} weight="bold" /> : <List size={20} weight="bold" />}
             </button>
           </div>
         </div>
 
-        {/* Mobile Nav */}
-        {menuOpen && (
-          <div className="md:hidden py-3 border-t border-slate-100 space-y-0.5">
+        {/* Mobile nav */}
+        {open && (
+          <div className="md:hidden py-3 border-t space-y-0.5" style={{ borderColor: "#99F6E4" }}>
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="block px-3 py-2.5 text-sm font-medium text-slate-700 hover:text-indigo-600 hover:bg-indigo-50 rounded-lg transition-colors"
-                onClick={() => setMenuOpen(false)}
+                className="block px-3 py-2.5 text-sm font-medium rounded-lg"
+                style={{ color: "#374151" }}
+                onClick={() => setOpen(false)}
               >
                 {item.label}
               </Link>
             ))}
             <div className="pt-2">
-              <Link
-                href="/contact"
-                className="block px-3 py-2.5 text-sm font-semibold text-indigo-600 bg-indigo-50 rounded-lg"
-                onClick={() => setMenuOpen(false)}
-              >
-                免費諮詢 →
+              <Link href="/contact" className="block text-center py-2.5 text-sm font-semibold rounded-lg text-white"
+                style={{ background: "#0369A1" }}
+                onClick={() => setOpen(false)}>
+                免費諮詢
               </Link>
             </div>
           </div>
