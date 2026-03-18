@@ -20,14 +20,14 @@ export default function Footer() {
             <p className="text-sm leading-relaxed mb-1.5 max-w-[38ch] text-pretty" style={{ color: "oklch(75% 0.015 178)" }}>
               新竹最專業的外商租屋代管服務。英語・日語・中文，全程三語服務。
             </p>
-            <p className="text-xs italic" style={{ color: "oklch(55% 0.015 178)" }}>
+            <p className="text-xs italic" style={{ color: "#9aa0a8" }}>
               Your Home in Hsinchu. In English, In Japanese, In Chinese.
             </p>
           </div>
 
           {/* Links */}
           <div>
-            <h3 className="text-[11px] font-semibold uppercase tracking-widest mb-4" style={{ color: "oklch(55% 0.015 178)" }}>導航</h3>
+            <h3 className="text-[11px] font-semibold uppercase tracking-widest mb-4" style={{ color: "#9aa0a8" }}>導航</h3>
             <ul className="space-y-2.5">
               {[
                 { href: "/services", label: "代管服務" },
@@ -48,7 +48,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-[11px] font-semibold uppercase tracking-widest mb-4" style={{ color: "oklch(55% 0.015 178)" }}>聯絡</h3>
+            <h3 className="text-[11px] font-semibold uppercase tracking-widest mb-4" style={{ color: "#9aa0a8" }}>聯絡</h3>
             <ul className="space-y-3">
               {[
                 { Icon: ChatCircle, label: "LINE: @expathome-hsinchu" },
@@ -60,7 +60,7 @@ export default function Footer() {
                   {label}
                 </li>
               ))}
-              <li className="text-xs pt-1" style={{ color: "oklch(45% 0.015 178)" }}>
+              <li className="text-xs pt-1" style={{ color: "#8a9099" }}>
                 週一至週六 09:00–18:00 (GMT+8)
               </li>
             </ul>
@@ -69,8 +69,8 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t flex flex-col md:flex-row justify-between items-center gap-3"
           style={{ borderColor: "oklch(25% 0.01 178)" }}>
-          <p className="text-xs" style={{ color: "oklch(40% 0.01 178)" }}>© 2025 ExpatHome Hsinchu. 版權所有。</p>
-          <p className="text-xs" style={{ color: "oklch(40% 0.01 178)" }}>服務區域：新竹市・新竹縣・竹北市・竹科</p>
+          <p className="text-xs" style={{ color: "#818990" }}>© 2025 ExpatHome Hsinchu. 版權所有。</p>
+          <p className="text-xs" style={{ color: "#818990" }}>服務區域：新竹市・新竹縣・竹北市・竹科</p>
         </div>
       </div>
 

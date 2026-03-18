@@ -82,7 +82,7 @@ export default function JapaneseHomePage() {
             {[{ num: "100+", label: "外国人入居者実績" }, { num: "3", label: "対応言語" }, { num: "24h", label: "緊急対応" }].map((s) => (
               <div key={s.label}>
                 <div className="text-2xl font-bold tabular-nums" style={{ color: "#F0FDFA" }}>{s.num}</div>
-                <div className="text-xs mt-0.5" style={{ color: "#99F6E4", opacity: 0.7 }}>{s.label}</div>
+                <div className="text-xs mt-0.5" style={{ color: "#6ecfc7" }}>{s.label}</div>
               </div>
             ))}
           </div>
@@ -92,9 +92,9 @@ export default function JapaneseHomePage() {
       {/* ── TRUST BAR ── */}
       <section className="border-b py-4" style={{ background: "#F0FDFA", borderColor: "#99F6E4" }}>
         <div className="max-w-7xl mx-auto px-6 flex flex-wrap items-center justify-center gap-x-8 gap-y-1.5">
-          <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: "#0F766E", opacity: 0.6 }}>対応企業（一部）</span>
+          <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: "#4a938d" }}>対応企業（一部）</span>
           {["ASML", "東京エレクトロン", "ラムリサーチ", "KLA", "Synopsys", "アプライドマテリアルズ"].map((c) => (
-            <span key={c} className="text-sm font-semibold" style={{ color: "#0A1F1E", opacity: 0.45 }}>{c}</span>
+            <span key={c} className="text-sm font-semibold" style={{ color: "#6B7280" }}>{c}</span>
           ))}
         </div>
       </section>
@@ -113,7 +113,7 @@ export default function JapaneseHomePage() {
               <Globe size={36} weight="duotone" style={{ color: "#5EEAD4" }} />
               <div>
                 <h3 className="text-xl font-bold text-white mb-2">{features[0].title}</h3>
-                <p className="text-sm leading-relaxed" style={{ color: "oklch(92% 0.04 178)" }}>{features[0].desc}</p>
+                <p className="text-sm leading-relaxed" style={{ color: "#d1f5f0" }}>{features[0].desc}</p>
               </div>
             </div>
             <div className="md:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -141,7 +141,7 @@ export default function JapaneseHomePage() {
           <div className="grid grid-cols-1 md:grid-cols-5 gap-px border rounded-2xl overflow-hidden" style={{ borderColor: "#99F6E4", background: "#99F6E4" }}>
             {steps.map((s) => (
               <div key={s.n} className="p-6 flex flex-col gap-4" style={{ background: "#F0FDFA" }}>
-                <span className="text-3xl font-bold tabular-nums" style={{ color: "#0F766E", opacity: 0.25 }}>{s.n}</span>
+                <span aria-hidden="true" className="text-3xl font-bold tabular-nums" style={{ color: "#0F766E", opacity: 0.25 }}>{s.n}</span>
                 <div>
                   <h3 className="font-semibold text-sm mb-1" style={{ color: "#0A1F1E" }}>{s.title}</h3>
                   <p className="text-xs leading-relaxed" style={{ color: "#52696B" }}>{s.desc}</p>

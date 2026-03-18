@@ -135,7 +135,7 @@ export default function ServicesPage() {
               <UsersFour size={36} weight="duotone" style={{ color: "#5EEAD4" }} />
               <div>
                 <h3 className="text-xl font-bold text-white mb-2">{landlordServices[0].title}</h3>
-                <p className="text-sm leading-relaxed" style={{ color: "oklch(92% 0.04 178)" }}>{landlordServices[0].desc}</p>
+                <p className="text-sm leading-relaxed" style={{ color: "#d1f5f0" }}>{landlordServices[0].desc}</p>
               </div>
             </div>
 

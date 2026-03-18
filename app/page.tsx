@@ -191,7 +191,7 @@ export default function HomePage() {
             ].map((s) => (
               <div key={s.label}>
                 <div className="text-2xl font-bold tabular-nums" style={{ color: "#F0FDFA" }}>{s.num}</div>
-                <div className="text-xs mt-0.5" style={{ color: "#99F6E4", opacity: 0.7 }}>{s.label}</div>
+                <div className="text-xs mt-0.5" style={{ color: "#6ecfc7" }}>{s.label}</div>
               </div>
             ))}
           </div>
@@ -202,11 +202,11 @@ export default function HomePage() {
       <section className="border-b py-4" style={{ background: "#F0FDFA", borderColor: "#99F6E4" }}>
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-1.5">
-            <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: "#0F766E", opacity: 0.6 }}>
+            <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: "#3d7870" }}>
               服務外商員工包含
             </span>
             {companies.map((c) => (
-              <span key={c} className="text-sm font-semibold" style={{ color: "#0A1F1E", opacity: 0.45 }}>{c}</span>
+              <span key={c} className="text-sm font-semibold" style={{ color: "#6B7280" }}>{c}</span>
             ))}
           </div>
         </div>
@@ -234,7 +234,7 @@ export default function HomePage() {
               <Globe size={36} weight="duotone" style={{ color: "#5EEAD4" }} />
               <div>
                 <h3 className="text-xl font-bold text-white mb-2">{features[0].title}</h3>
-                <p className="text-sm leading-relaxed" style={{ color: "oklch(92% 0.04 178)" }}>{features[0].desc}</p>
+                <p className="text-sm leading-relaxed" style={{ color: "#d1f5f0" }}>{features[0].desc}</p>
               </div>
             </div>
 
@@ -271,7 +271,7 @@ export default function HomePage() {
             {steps.map((s) => (
               <div key={s.n} className="p-6 flex flex-col gap-4"
                 style={{ background: "#F0FDFA" }}>
-                <span className="text-3xl font-bold tabular-nums" style={{ color: "#0F766E", opacity: 0.25 }}>{s.n}</span>
+                <span aria-hidden="true" className="text-3xl font-bold tabular-nums" style={{ color: "#0F766E", opacity: 0.25 }}>{s.n}</span>
                 <div>
                   <h3 className="font-semibold text-sm mb-1" style={{ color: "#0A1F1E" }}>{s.title}</h3>
                   <p className="text-xs leading-relaxed" style={{ color: "#52696B" }}>{s.desc}</p>
