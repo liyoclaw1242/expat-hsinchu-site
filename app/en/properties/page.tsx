@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { Bed, Ruler, Elevator, ArrowRight } from "@phosphor-icons/react/dist/ssr";
 
 export const metadata: Metadata = {
-  title: "Hsinchu Expat Properties | Furnished Apartments | ExpatHome Hsinchu",
+  title: "Hsinchu Expat Properties | Furnished Apartments | 易澤居 EasyRent",
   description: "Curated furnished apartments for expats in Hsinchu, Taiwan. Zhubei High-Speed Rail district and Guanpu area. 2–3 bedroom, elevator buildings, English-speaking management.",
   alternates: {
     canonical: "https://www.easyrents.xyz/en/properties",

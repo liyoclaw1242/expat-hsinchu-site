@@ -66,9 +66,10 @@ export default function Header() {
             </div>
             <div className="leading-none">
               <span className="text-[15px] font-semibold tracking-tight" style={{ color: "#0A1F1E" }}>
-                ExpatHome
+                EasyRent
               </span>
               <span className="text-[11px] block font-medium" style={{ color: "#0F766E" }}>
+                易澤居
                 Hsinchu
               </span>
             </div>

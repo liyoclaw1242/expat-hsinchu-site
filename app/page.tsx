@@ -13,7 +13,7 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 
 export const metadata: Metadata = {
-  title: "ExpatHome Hsinchu | 新竹外商租屋專家 | 竹科外派住宅服務",
+  title: "易澤居 EasyRent | 新竹外商租屋專家 | 竹科外派住宅服務",
   description:
     "新竹最專業的外商租屋代管服務。英語・日語・中文三語全程服務，專為 ASML、竹科外派人員量身打造。竹北高鐵特區精選住宅，入住保障，與 Relocation Agent 深度合作。",
   alternates: { canonical: "https://www.easyrents.xyz" },
@@ -67,7 +67,7 @@ const testimonials = [
     name: "Thomas M.",
     company: "ASML Taiwan",
     flag: "🇳🇱",
-    text: "ExpatHome made my relocation to Hsinchu incredibly smooth. They handled everything in English — exactly what I needed.",
+    text: "易澤居 made my relocation to Hsinchu incredibly smooth. They handled everything in English — exactly what I needed.",
   },
   {
     name: "田中 健一",
@@ -111,7 +111,7 @@ export default function HomePage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: "ExpatHome Hsinchu",
+    name: "易澤居 EasyRent",
     description: "新竹外商租屋代管，英日中三語服務，專為竹科外派人員",
     url: "https://www.easyrents.xyz",
     areaServed: ["新竹市", "新竹縣", "竹北市"],

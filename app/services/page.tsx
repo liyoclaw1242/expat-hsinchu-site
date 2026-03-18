@@ -16,9 +16,9 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 
 export const metadata: Metadata = {
-  title: "代管服務內容與費用 | ExpatHome Hsinchu 新竹外商租屋代管",
+  title: "代管服務內容與費用 | 易澤居 EasyRent 新竹外商租屋代管",
   description:
-    "ExpatHome Hsinchu 全方位房屋代管服務：找租客、驗屋、三語合約、收租管理、維修協調。透明費用，專為外商外派人員設計。",
+    "易澤居 EasyRent 全方位房屋代管服務：找租客、驗屋、三語合約、收租管理、維修協調。透明費用，專為外商外派人員設計。",
   alternates: { canonical: "https://www.easyrents.xyz/services" },
 };
 
@@ -82,9 +82,9 @@ export default function ServicesPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "ExpatHome Hsinchu 房屋代管服務",
+    name: "易澤居 EasyRent 房屋代管服務",
     serviceType: "Property Management",
-    provider: { "@type": "LocalBusiness", name: "ExpatHome Hsinchu" },
+    provider: { "@type": "LocalBusiness", name: "易澤居 EasyRent" },
     areaServed: "新竹市、新竹縣、竹北市",
     availableLanguage: ["Chinese", "English", "Japanese"],
   };
@@ -97,7 +97,7 @@ export default function ServicesPage() {
       <section className="relative h-64 md:h-80 overflow-hidden" style={{ background: "#0A1F1E" }}>
         <Image
           src="/images/services-banner.png"
-          alt="ExpatHome Hsinchu 專業代管服務"
+          alt="易澤居 EasyRent 專業代管服務"
           fill className="object-cover object-center opacity-50" priority
         />
         <div className="absolute inset-0"

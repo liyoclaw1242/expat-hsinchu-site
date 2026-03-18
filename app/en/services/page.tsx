@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { UsersFour, FileText, MagnifyingGlass, CurrencyCircleDollar, Wrench, ChartBar, Globe, MapPin, ShieldCheck, ArrowRight, CheckCircle } from "@phosphor-icons/react/dist/ssr";
 
 export const metadata: Metadata = {
-  title: "Property Management Services | ExpatHome Hsinchu",
+  title: "Property Management Services | 易澤居 EasyRent",
   description: "Full-service property management for expats in Hsinchu. English-speaking agents, bilingual contracts, pre-move-in inspection, monthly reporting. Serving ASML, Applied Materials and all Hsinchu Science Park expats.",
   alternates: {
     canonical: "https://www.easyrents.xyz/en/services",
@@ -32,7 +32,7 @@ export default function EnServicesPage() {
   return (
     <>
       <section className="relative h-64 md:h-80 overflow-hidden" style={{ background: "#0A1F1E" }}>
-        <Image src="/images/services-banner.png" alt="ExpatHome Hsinchu professional property management service" fill className="object-cover object-center opacity-50" priority />
+        <Image src="/images/services-banner.png" alt="易澤居 EasyRent professional property management service" fill className="object-cover object-center opacity-50" priority />
         <div className="absolute inset-0" style={{ background: "linear-gradient(to right, #0A1F1E 40%, #0A1F1E66 70%, transparent)" }} />
         <div className="absolute inset-0 flex items-center px-8 md:px-16 max-w-7xl mx-auto">
           <div>

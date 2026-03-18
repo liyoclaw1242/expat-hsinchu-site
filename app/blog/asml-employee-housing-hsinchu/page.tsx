@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "ASML Employee Housing Guide Hsinchu | ExpatHome Hsinchu",
+  title: "ASML Employee Housing Guide Hsinchu | 易澤居 EasyRent",
   description:
     "Complete housing guide for ASML employees in Hsinchu, Taiwan. Housing allowance process, recommended areas (Zhubei High-Speed Rail zone), English-speaking property management services.",
   keywords: [
@@ -25,7 +25,7 @@ export default function ASMLHousingGuide() {
     description: "Complete housing guide for ASML and semiconductor expat employees in Hsinchu",
     datePublished: "2025-03-10",
     dateModified: "2025-03-18",
-    author: { "@type": "Organization", name: "ExpatHome Hsinchu" },
+    author: { "@type": "Organization", name: "易澤居 EasyRent" },
     inLanguage: ["en", "zh-TW"],
     about: [
       { "@type": "Organization", name: "ASML" },
@@ -138,7 +138,7 @@ export default function ASMLHousingGuide() {
                 to view apartments before the official start date
               </li>
               <li>
-                <strong>Property selection:</strong> Work with agent (or ExpatHome Hsinchu) to shortlist
+                <strong>Property selection:</strong> Work with agent (or 易澤居 EasyRent) to shortlist
                 properties that match your allowance and requirements
               </li>
               <li>
@@ -178,7 +178,7 @@ export default function ASMLHousingGuide() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">需要協助？（中文版）</h2>
             <p className="text-gray-700 leading-relaxed">
-              ExpatHome Hsinchu 與多家 ASML 員工合作，熟悉 ASML 的住宿補貼流程和合約需求。
+              易澤居 EasyRent 與多家 ASML 員工合作，熟悉 ASML 的住宿補貼流程和合約需求。
               我們提供英語、日語、中文三語服務，可以協助：
             </p>
             <ul className="list-disc list-inside text-gray-700 space-y-2 mt-4">

@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import { Target, Handshake, ShieldCheck, UsersThree, ArrowRight } from "@phosphor-icons/react/dist/ssr";
 
 export const metadata: Metadata = {
-  title: "關於我們 | ExpatHome Hsinchu | 新竹外商租屋專家",
-  description: "ExpatHome Hsinchu 的故事：為什麼我們專注外商租屋代管，我們的使命、服務範圍與語言支援。",
+  title: "關於我們 | 易澤居 EasyRent | 新竹外商租屋專家",
+  description: "易澤居 EasyRent 的故事：為什麼我們專注外商租屋代管，我們的使命、服務範圍與語言支援。",
   alternates: { canonical: "https://www.easyrents.xyz/about" },
 };
 
@@ -52,7 +52,7 @@ export default function AboutPage() {
           <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#0F766E" }}>關於我們</p>
           <h1 className="text-[clamp(2.25rem,1.75rem+2.5vw,3.5rem)] font-bold tracking-tighter text-balance mb-4"
             style={{ color: "#0A1F1E" }}>
-            ExpatHome Hsinchu
+            易澤居 EasyRent
           </h1>
           <p className="text-base leading-relaxed max-w-[55ch] text-pretty" style={{ color: "#52696B" }}>
             我們不只是仲介，我們是外派員工在新竹的在地夥伴。
@@ -75,7 +75,7 @@ export default function AboutPage() {
               </p>
               <p className="text-sm leading-relaxed text-pretty" style={{ color: "#374151" }}>
                 語言不通、合約看不懂、維修聯絡不上房東、押金被莫名扣留……
-                ExpatHome Hsinchu 存在的理由很簡單：終結這些問題。
+                易澤居 EasyRent 存在的理由很簡單：終結這些問題。
               </p>
             </div>
 

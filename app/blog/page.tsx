@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 
 export const metadata: Metadata = {
-  title: "新竹外派租屋指南 | 外商員工必讀 | ExpatHome Hsinchu",
+  title: "新竹外派租屋指南 | 外商員工必讀 | 易澤居 EasyRent",
   description: "完整的新竹外派租屋指南。竹科外籍人員租屋攻略、竹北熱門區域分析、ASML 員工住宿資訊，英日中三語內容。",
   alternates: { canonical: "https://www.easyrents.xyz/blog" },
 };

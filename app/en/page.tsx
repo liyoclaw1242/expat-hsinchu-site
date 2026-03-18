@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { Globe, MagnifyingGlass, Handshake, Buildings, ChatCircle, ChartBar, ArrowRight, Star } from "@phosphor-icons/react/dist/ssr";
 
 export const metadata: Metadata = {
-  title: "ExpatHome Hsinchu | Expat Housing & Property Management in Hsinchu, Taiwan",
+  title: "易澤居 EasyRent | Expat Housing & Property Management in Hsinchu, Taiwan",
   description:
     "Hsinchu's specialist expat housing and property management service. Full English support for ASML, Applied Materials, Lam Research and all Hsinchu Science Park expats. Bilingual lease, pre-move-in inspection, relocation agent partnerships.",
   alternates: {
@@ -35,8 +35,8 @@ const steps = [
 ];
 
 const testimonials = [
-  { name: "Thomas M.", company: "ASML Taiwan", flag: "🇳🇱", text: "ExpatHome made my relocation to Hsinchu incredibly smooth. They handled everything in English — exactly what I needed as an expat." },
-  { name: "Sarah K.", company: "Applied Materials Taiwan", flag: "🇺🇸", text: "Finding an apartment in Taiwan as a foreigner can be stressful. ExpatHome handled the whole process in English and the lease was fully bilingual. Highly recommended." },
+  { name: "Thomas M.", company: "ASML Taiwan", flag: "🇳🇱", text: "易澤居 made my relocation to Hsinchu incredibly smooth. They handled everything in English — exactly what I needed as an expat." },
+  { name: "Sarah K.", company: "Applied Materials Taiwan", flag: "🇺🇸", text: "Finding an apartment in Taiwan as a foreigner can be stressful. 易澤居 handled the whole process in English and the lease was fully bilingual. Highly recommended." },
   { name: "Mr. Li", company: "Landlord, Zhubei", flag: "🇹🇼", text: "They find quality expat tenants, collect rent reliably, and send me a monthly report. Completely hands-off for me." },
 ];
 

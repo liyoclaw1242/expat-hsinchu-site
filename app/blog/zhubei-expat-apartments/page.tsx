@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "竹北外商公寓推薦：高鐵特區 vs 關埔重劃區完整比較 | ExpatHome Hsinchu",
+  title: "竹北外商公寓推薦：高鐵特區 vs 關埔重劃區完整比較 | 易澤居 EasyRent",
   description:
     "竹北兩大外商熱門居住區域深度比較。高鐵特區 vs 關埔重劃區：交通、生活機能、租金行情、推薦社區，2025 年最新資訊。",
   keywords: [
@@ -172,7 +172,7 @@ export default function ZhubeiApartmentsGuide() {
       <div className="mt-16 bg-indigo-600 rounded-2xl p-8 text-white text-center">
         <h3 className="text-2xl font-bold mb-3">想看竹北精選物件？</h3>
         <p className="text-indigo-200 mb-6">
-          ExpatHome Hsinchu 在竹北兩大區域均有精選房源，免費為您配對。
+          易澤居 EasyRent 在竹北兩大區域均有精選房源，免費為您配對。
         </p>
         <a
           href="/properties"

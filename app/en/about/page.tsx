@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import { Target, Handshake, ShieldCheck, UsersThree, ArrowRight } from "@phosphor-icons/react/dist/ssr";
 
 export const metadata: Metadata = {
-  title: "About Us | ExpatHome Hsinchu",
-  description: "ExpatHome Hsinchu — the story behind Hsinchu's specialist expat housing service. Our mission, service areas, and language capabilities.",
+  title: "About Us | 易澤居 EasyRent",
+  description: "易澤居 EasyRent — the story behind Hsinchu's specialist expat housing service. Our mission, service areas, and language capabilities.",
   alternates: {
     canonical: "https://www.easyrents.xyz/en/about",
     languages: { "zh-TW": "https://www.easyrents.xyz/about", "en-US": "https://www.easyrents.xyz/en/about", "ja-JP": "https://www.easyrents.xyz/ja/about" },
@@ -24,7 +24,7 @@ export default function EnAboutPage() {
       <section className="py-16 px-6 border-b" style={{ background: "#F0FDFA", borderColor: "#99F6E4" }}>
         <div className="max-w-4xl mx-auto">
           <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#0F766E" }}>About</p>
-          <h1 className="text-[clamp(2.25rem,1.75rem+2.5vw,3.5rem)] font-bold tracking-tighter text-balance mb-4" style={{ color: "#0A1F1E" }}>ExpatHome Hsinchu</h1>
+          <h1 className="text-[clamp(2.25rem,1.75rem+2.5vw,3.5rem)] font-bold tracking-tighter text-balance mb-4" style={{ color: "#0A1F1E" }}>易澤居 EasyRent</h1>
           <p className="text-base leading-relaxed max-w-[55ch] text-pretty" style={{ color: "#52696B" }}>More than an agent — your partner in Hsinchu.</p>
         </div>
       </section>
@@ -39,7 +39,7 @@ export default function EnAboutPage() {
                 Hsinchu is one of the world's most important semiconductor hubs, yet the hundreds of engineers and managers arriving each year face rental challenges that almost nobody addresses properly.
               </p>
               <p className="text-sm leading-relaxed text-pretty" style={{ color: "#374151" }}>
-                Language barriers, opaque contracts, unresponsive landlords, unfair deposit deductions — ExpatHome Hsinchu exists to solve all of this.
+                Language barriers, opaque contracts, unresponsive landlords, unfair deposit deductions — 易澤居 EasyRent exists to solve all of this.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">

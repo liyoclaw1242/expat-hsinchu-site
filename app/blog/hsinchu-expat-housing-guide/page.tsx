@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "2025 新竹外派租屋完整指南：竹科外籍人員必讀 | ExpatHome Hsinchu",
+  title: "2025 新竹外派租屋完整指南：竹科外籍人員必讀 | 易澤居 EasyRent",
   description:
     "2025 年最完整的新竹外派租屋指南。竹北熱門區域分析、英語服務資源、住宿補貼申請流程、注意事項，竹科外籍人員必讀。",
   keywords: [
@@ -25,8 +25,8 @@ export default function HsinchuExpatGuide() {
     description: "完整解析新竹外派員工租屋流程，含英語服務資源、住宿補貼申請流程與注意事項",
     datePublished: "2025-03-18",
     dateModified: "2025-03-18",
-    author: { "@type": "Organization", name: "ExpatHome Hsinchu" },
-    publisher: { "@type": "Organization", name: "ExpatHome Hsinchu", url: "https://www.easyrents.xyz" },
+    author: { "@type": "Organization", name: "易澤居 EasyRent" },
+    publisher: { "@type": "Organization", name: "易澤居 EasyRent", url: "https://www.easyrents.xyz" },
     inLanguage: "zh-TW",
     about: { "@type": "Place", name: "新竹", containsPlace: "竹北市" },
     keywords: "新竹外派租屋, 竹科外籍人員住宅, Hsinchu expat rental",
@@ -169,7 +169,7 @@ export default function HsinchuExpatGuide() {
 
             <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">✅ 推薦：外商專業代管公司</h3>
             <p className="text-gray-700">
-              像 ExpatHome Hsinchu 這樣專注外商市場的代管公司，提供英日中三語服務，熟悉外商合約結構，
+              像 易澤居 EasyRent 這樣專注外商市場的代管公司，提供英日中三語服務，熟悉外商合約結構，
               可以協助從找房、帶看、驗屋到簽約後的全程管理。
             </p>
 
@@ -265,7 +265,7 @@ export default function HsinchuExpatGuide() {
         <div className="mt-16 bg-indigo-600 rounded-2xl p-8 text-white text-center">
           <h3 className="text-2xl font-bold mb-3">需要協助找房？</h3>
           <p className="text-indigo-200 mb-6">
-            ExpatHome Hsinchu 提供免費諮詢，英日中均可溝通。
+            易澤居 EasyRent 提供免費諮詢，英日中均可溝通。
           </p>
           <a
             href="/contact"

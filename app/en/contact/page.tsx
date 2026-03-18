@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { ChatCircle, Phone, EnvelopeSimple, ArrowRight } from "@phosphor-icons/react/dist/ssr";
 
 export const metadata: Metadata = {
-  title: "Contact Us | ExpatHome Hsinchu",
-  description: "Contact ExpatHome Hsinchu in English, Japanese, or Chinese. LINE, WhatsApp, and Email available. Free consultation for Hsinchu expat housing.",
+  title: "Contact Us | 易澤居 EasyRent",
+  description: "Contact 易澤居 EasyRent in English, Japanese, or Chinese. LINE, WhatsApp, and Email available. Free consultation for Hsinchu expat housing.",
   alternates: {
     canonical: "https://www.easyrents.xyz/en/contact",
     languages: { "zh-TW": "https://www.easyrents.xyz/contact", "en-US": "https://www.easyrents.xyz/en/contact", "ja-JP": "https://www.easyrents.xyz/ja/contact" },

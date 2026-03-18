@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "ExpatHome Hsinchu | 新竹外商租屋專家 | 竹科外派住宅服務",
-    template: "%s | ExpatHome Hsinchu",
+    default: "易澤居 EasyRent | 新竹外商租屋專家 | 竹科外派住宅服務",
+    template: "%s | 易澤居 EasyRent",
   },
   description:
     "新竹最專業的外商租屋代管服務。英語、日語、中文三語全程服務，專為 ASML、竹科外派人員量身打造。竹北高鐵特區精選住宅，入住保障，與 Relocation Agent 深度合作。",
@@ -36,16 +36,16 @@ export const metadata: Metadata = {
     "新竹日商租屋",
     "Hsinchu Japan expat housing",
   ],
-  authors: [{ name: "ExpatHome Hsinchu" }],
-  creator: "ExpatHome Hsinchu",
-  publisher: "ExpatHome Hsinchu",
+  authors: [{ name: "易澤居 EasyRent" }],
+  creator: "易澤居 EasyRent",
+  publisher: "易澤居 EasyRent",
   openGraph: {
     type: "website",
     locale: "zh_TW",
     alternateLocale: ["en_US", "ja_JP"],
     url: "https://www.easyrents.xyz",
-    siteName: "ExpatHome Hsinchu",
-    title: "ExpatHome Hsinchu | 新竹外商租屋專家",
+    siteName: "易澤居 EasyRent",
+    title: "易澤居 EasyRent | 新竹外商租屋專家",
     description:
       "新竹最專業的外商租屋代管服務。英日中三語，竹科外派人員首選。",
     images: [
@@ -53,13 +53,13 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "ExpatHome Hsinchu - 新竹外商租屋專家",
+        alt: "易澤居 EasyRent - 新竹外商租屋專家",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "ExpatHome Hsinchu | 新竹外商租屋專家",
+    title: "易澤居 EasyRent | 新竹外商租屋專家",
     description: "新竹最專業的外商租屋代管服務。英日中三語，竹科外派人員首選。",
   },
   robots: {

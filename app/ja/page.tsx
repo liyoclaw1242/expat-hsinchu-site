@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { Globe, MagnifyingGlass, Handshake, Buildings, ChatCircle, ChartBar, ArrowRight, Star } from "@phosphor-icons/react/dist/ssr";
 
 export const metadata: Metadata = {
-  title: "ExpatHome Hsinchu | 新竹駐在員向け賃貸・住宅管理サービス",
+  title: "易澤居 EasyRent | 新竹駐在員向け賃貸・住宅管理サービス",
   description:
     "新竹科学工業園区（竹科）に勤務する駐在員向けの賃貸・住宅管理サービス。日本語完全対応。ASML、東京エレクトロン、ラムリサーチ等の企業の駐在員実績多数。竹北高鐵エリアの厳選物件、入居前検査、三ヶ国語契約。",
   alternates: {
@@ -36,7 +36,7 @@ const steps = [
 
 const testimonials = [
   { name: "田中 健一", company: "東京エレクトロン台湾", flag: "🇯🇵", text: "日本語対応がとても助かりました。竹北の物件選びから入居後のサポートまで、安心してお任せできました。" },
-  { name: "山田 誠", company: "ASML Japan → Taiwan", flag: "🇯🇵", text: "台湾での賃貸契約は不安でしたが、ExpatHomeが日本語で全部サポートしてくれました。契約書も日中日本語対照で安心です。" },
+  { name: "山田 誠", company: "ASML Japan → Taiwan", flag: "🇯🇵", text: "台湾での賃貸契約は不安でしたが、易澤居が日本語で全部サポートしてくれました。契約書も日中日本語対照で安心です。" },
   { name: "李さん", company: "オーナー・竹北", flag: "🇹🇼", text: "日系企業の駐在員さんを定期的に紹介してもらっています。毎月きちんとレポートも届き、完全に任せられます。" },
 ];
 
