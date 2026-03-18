@@ -44,16 +44,16 @@ const posts = [
 
 export default function BlogPage() {
   return (
-    <div style={{ background: "#ffffff" }}>
+    <div style={{ background: "var(--card-bg)" }}>
       {/* ── Header ── */}
-      <section className="py-16 px-6 border-b" style={{ background: "#F0FDFA", borderColor: "#99F6E4" }}>
+      <section className="py-16 px-6 border-b" style={{ background: "var(--surface)", borderColor: "var(--border)" }}>
         <div className="max-w-5xl mx-auto">
-          <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#0F766E" }}>租屋指南</p>
+          <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "var(--teal)" }}>租屋指南</p>
           <h1 className="text-[clamp(2.25rem,1.75rem+2.5vw,3.5rem)] font-bold tracking-tighter text-balance mb-3"
-            style={{ color: "#0A1F1E" }}>
+            style={{ color: "var(--text)" }}>
             外派租屋指南
           </h1>
-          <p className="text-base leading-relaxed max-w-[52ch] text-pretty" style={{ color: "#52696B" }}>
+          <p className="text-base leading-relaxed max-w-[52ch] text-pretty" style={{ color: "var(--text-muted)" }}>
             深度內容，幫助在新竹的外商員工找到理想的家
           </p>
         </div>
@@ -65,7 +65,7 @@ export default function BlogPage() {
           {posts.map((post) => (
             <Link key={post.href} href={post.href} className="group block">
               <article className="rounded-2xl border overflow-hidden card-lift flex flex-col md:flex-row"
-                style={{ borderColor: "#E2E8F0", background: "#ffffff" }}>
+                style={{ borderColor: "var(--border)", background: "var(--card-bg)" }}>
                 {/* Thumbnail */}
                 <div className="relative h-44 md:h-auto md:w-56 flex-shrink-0 overflow-hidden">
                   <Image
@@ -80,23 +80,23 @@ export default function BlogPage() {
                   <div>
                     <div className="flex flex-wrap items-center gap-2 mb-3">
                       <span className="text-[11px] font-semibold px-2.5 py-1 rounded-md"
-                        style={{ background: "#F0FDFA", color: "#0F766E" }}>
+                        style={{ background: "var(--surface)", color: "var(--teal)" }}>
                         {post.tag}
                       </span>
-                      <span className="text-xs" style={{ color: "#9BA3AF" }}>
+                      <span className="text-xs" style={{ color: "var(--text-subtle)" }}>
                         {post.date} · {post.readTime} · {post.lang}
                       </span>
                     </div>
                     <h2 className="text-lg font-bold leading-snug mb-2 group-hover:underline text-balance"
-                      style={{ color: "#0A1F1E" }}>
+                      style={{ color: "var(--text)" }}>
                       {post.title}
                     </h2>
-                    <p className="text-sm leading-relaxed text-pretty" style={{ color: "#52696B" }}>
+                    <p className="text-sm leading-relaxed text-pretty" style={{ color: "var(--text-muted)" }}>
                       {post.desc}
                     </p>
                   </div>
                   <div className="flex items-center gap-1.5 mt-4 text-sm font-semibold"
-                    style={{ color: "#0F766E" }}>
+                    style={{ color: "var(--teal)" }}>
                     閱讀全文 <ArrowRight size={14} weight="bold" />
                   </div>
                 </div>

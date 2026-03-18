@@ -45,35 +45,35 @@ const langs = [
 
 export default function AboutPage() {
   return (
-    <div style={{ background: "#ffffff" }}>
+    <div style={{ background: "var(--card-bg)" }}>
       {/* ── Header ── */}
-      <section className="py-16 px-6 border-b" style={{ background: "#F0FDFA", borderColor: "#99F6E4" }}>
+      <section className="py-16 px-6 border-b" style={{ background: "var(--surface)", borderColor: "var(--border)" }}>
         <div className="max-w-4xl mx-auto">
-          <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#0F766E" }}>關於我們</p>
+          <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "var(--teal)" }}>關於我們</p>
           <h1 className="text-[clamp(2.25rem,1.75rem+2.5vw,3.5rem)] font-bold tracking-tighter text-balance mb-4"
-            style={{ color: "#0A1F1E" }}>
+            style={{ color: "var(--text)" }}>
             易澤居 EasyRent
           </h1>
-          <p className="text-base leading-relaxed max-w-[55ch] text-pretty" style={{ color: "#52696B" }}>
+          <p className="text-base leading-relaxed max-w-[55ch] text-pretty" style={{ color: "var(--text-muted)" }}>
             我們不只是仲介，我們是外派員工在新竹的在地夥伴。
           </p>
         </div>
       </section>
 
       {/* ── Mission ── */}
-      <section className="py-16 px-6" style={{ background: "#ffffff" }}>
+      <section className="py-16 px-6" style={{ background: "var(--card-bg)" }}>
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#0F766E" }}>使命</p>
-              <h2 className="text-2xl font-bold tracking-tight mb-5" style={{ color: "#0A1F1E" }}>
+              <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "var(--teal)" }}>使命</p>
+              <h2 className="text-2xl font-bold tracking-tight mb-5" style={{ color: "var(--text)" }}>
                 讓每一位外派員工<br />在新竹都能有個家
               </h2>
-              <p className="text-sm leading-relaxed text-pretty mb-4" style={{ color: "#374151" }}>
+              <p className="text-sm leading-relaxed text-pretty mb-4" style={{ color: "var(--text-secondary)" }}>
                 在新竹這個全球半導體重鎮，每年有數百名外籍工程師、主管從世界各地來到這裡。
                 他們為台灣的科技產業貢獻巨大，但他們面對的租屋挑戰卻鮮少有人認真解決。
               </p>
-              <p className="text-sm leading-relaxed text-pretty" style={{ color: "#374151" }}>
+              <p className="text-sm leading-relaxed text-pretty" style={{ color: "var(--text-secondary)" }}>
                 語言不通、合約看不懂、維修聯絡不上房東、押金被莫名扣留……
                 易澤居 EasyRent 存在的理由很簡單：終結這些問題。
               </p>
@@ -88,9 +88,9 @@ export default function AboutPage() {
                 { num: "2+", label: "Relocation 合作夥伴" },
               ].map((s) => (
                 <div key={s.label} className="rounded-2xl p-6 border"
-                  style={{ background: "#F0FDFA", borderColor: "#99F6E4" }}>
-                  <div className="text-3xl font-bold tabular-nums tracking-tighter" style={{ color: "#0F766E" }}>{s.num}</div>
-                  <div className="text-xs mt-1" style={{ color: "#52696B" }}>{s.label}</div>
+                  style={{ background: "var(--surface)", borderColor: "var(--border)" }}>
+                  <div className="text-3xl font-bold tabular-nums tracking-tighter" style={{ color: "var(--teal)" }}>{s.num}</div>
+                  <div className="text-xs mt-1" style={{ color: "var(--text-muted)" }}>{s.label}</div>
                 </div>
               ))}
             </div>
@@ -99,21 +99,21 @@ export default function AboutPage() {
       </section>
 
       {/* ── Differentiators ── */}
-      <section className="py-16 px-6" style={{ background: "#F0FDFA" }}>
+      <section className="py-16 px-6" style={{ background: "var(--surface)" }}>
         <div className="max-w-4xl mx-auto">
           <div className="max-w-xl mb-10">
-            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#0F766E" }}>差異化</p>
-            <h2 className="text-2xl font-bold tracking-tight text-balance" style={{ color: "#0A1F1E" }}>
+            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "var(--teal)" }}>差異化</p>
+            <h2 className="text-2xl font-bold tracking-tight text-balance" style={{ color: "var(--text)" }}>
               為什麼我們不一樣
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {differentiators.map(({ Icon, title, desc }) => (
               <div key={title} className="rounded-2xl p-6 border"
-                style={{ background: "#ffffff", borderColor: "#99F6E4" }}>
-                <Icon size={26} weight="duotone" style={{ color: "#0F766E" }} />
-                <h3 className="text-sm font-semibold mt-4 mb-1.5" style={{ color: "#0A1F1E" }}>{title}</h3>
-                <p className="text-xs leading-relaxed text-pretty" style={{ color: "#52696B" }}>{desc}</p>
+                style={{ background: "var(--card-bg)", borderColor: "var(--border)" }}>
+                <Icon size={26} weight="duotone" style={{ color: "var(--teal)" }} />
+                <h3 className="text-sm font-semibold mt-4 mb-1.5" style={{ color: "var(--text)" }}>{title}</h3>
+                <p className="text-xs leading-relaxed text-pretty" style={{ color: "var(--text-muted)" }}>{desc}</p>
               </div>
             ))}
           </div>
@@ -121,18 +121,18 @@ export default function AboutPage() {
       </section>
 
       {/* ── Service Areas + Languages ── */}
-      <section className="py-16 px-6" style={{ background: "#ffffff" }}>
+      <section className="py-16 px-6" style={{ background: "var(--card-bg)" }}>
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* Areas */}
           <div>
-            <p className="text-xs font-semibold uppercase tracking-widest mb-5" style={{ color: "#0F766E" }}>服務範圍</p>
+            <p className="text-xs font-semibold uppercase tracking-widest mb-5" style={{ color: "var(--teal)" }}>服務範圍</p>
             <div className="divide-y rounded-2xl overflow-hidden border"
-              style={{ borderColor: "#99F6E4" }}>
+              style={{ borderColor: "var(--border)" }}>
               {areas.map((a) => (
                 <div key={a.name} className="flex items-center justify-between px-5 py-4"
-                  style={{ background: "#ffffff" }}>
-                  <span className="text-sm font-semibold" style={{ color: "#0A1F1E" }}>{a.name}</span>
-                  <span className="text-xs" style={{ color: "#6B7280" }}>{a.detail}</span>
+                  style={{ background: "var(--card-bg)" }}>
+                  <span className="text-sm font-semibold" style={{ color: "var(--text)" }}>{a.name}</span>
+                  <span className="text-xs" style={{ color: "var(--text-subtle)" }}>{a.detail}</span>
                 </div>
               ))}
             </div>
@@ -140,15 +140,15 @@ export default function AboutPage() {
 
           {/* Languages */}
           <div>
-            <p className="text-xs font-semibold uppercase tracking-widest mb-5" style={{ color: "#0F766E" }}>語言服務</p>
+            <p className="text-xs font-semibold uppercase tracking-widest mb-5" style={{ color: "var(--teal)" }}>語言服務</p>
             <div className="space-y-3">
               {langs.map((l) => (
                 <div key={l.lang} className="flex items-center gap-4 px-5 py-4 rounded-xl border"
-                  style={{ background: "#F0FDFA", borderColor: "#99F6E4" }}>
+                  style={{ background: "var(--surface)", borderColor: "var(--border)" }}>
                   <span className="text-2xl" aria-hidden="true">{l.flag}</span>
                   <div>
-                    <div className="text-sm font-semibold" style={{ color: "#0A1F1E" }}>{l.lang}</div>
-                    <div className="text-xs" style={{ color: "#6B7280" }}>{l.note}</div>
+                    <div className="text-sm font-semibold" style={{ color: "var(--text)" }}>{l.lang}</div>
+                    <div className="text-xs" style={{ color: "var(--text-subtle)" }}>{l.note}</div>
                   </div>
                 </div>
               ))}
@@ -158,15 +158,15 @@ export default function AboutPage() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="py-12 px-6 border-t" style={{ background: "#F0FDFA", borderColor: "#99F6E4" }}>
+      <section className="py-12 px-6 border-t" style={{ background: "var(--surface)", borderColor: "var(--border)" }}>
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <p className="text-base font-semibold" style={{ color: "#0A1F1E" }}>有問題嗎？直接聯絡我們。</p>
-            <p className="text-sm mt-0.5" style={{ color: "#52696B" }}>英日中均可溝通，免費諮詢</p>
+            <p className="text-base font-semibold" style={{ color: "var(--text)" }}>有問題嗎？直接聯絡我們。</p>
+            <p className="text-sm mt-0.5" style={{ color: "var(--text-muted)" }}>英日中均可溝通，免費諮詢</p>
           </div>
           <Link href="/contact"
             className="inline-flex items-center gap-2 px-7 py-3 rounded-lg text-sm font-semibold text-white flex-shrink-0"
-            style={{ background: "#0369A1" }}>
+            style={{ background: "var(--blue)" }}>
             聯絡我們 <ArrowRight size={15} weight="bold" />
           </Link>
         </div>

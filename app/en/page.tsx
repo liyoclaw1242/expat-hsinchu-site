@@ -44,7 +44,7 @@ export default function EnglishHomePage() {
   return (
     <>
       {/* ── HERO ── */}
-      <section className="relative min-h-[100dvh] flex items-center overflow-hidden" style={{ background: "#0A1F1E" }}>
+      <section className="relative min-h-[100dvh] flex items-center overflow-hidden" style={{ background: "var(--hero-bg)" }}>
         <div className="absolute inset-0">
           <Image src="/images/hero-banner.png" alt="Zhubei Hsinchu city at night" fill className="object-cover object-center opacity-40" priority />
           <div className="absolute inset-0" style={{ background: "linear-gradient(to right, #0A1F1E 45%, #0A1F1E88 70%, transparent)" }} />
@@ -71,7 +71,7 @@ export default function EnglishHomePage() {
           </p>
 
           <div className="flex flex-wrap gap-3">
-            <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold text-white" style={{ background: "#0369A1" }}>
+            <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold text-white" style={{ background: "var(--blue)" }}>
               Free Consultation <ArrowRight size={16} weight="bold" />
             </Link>
             <Link href="/properties" className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold border" style={{ borderColor: "oklch(80% 0.1 178 / 0.4)", color: "#F0FDFA" }}>
@@ -91,26 +91,26 @@ export default function EnglishHomePage() {
       </section>
 
       {/* ── TRUST BAR ── */}
-      <section className="border-b py-4" style={{ background: "#F0FDFA", borderColor: "#99F6E4" }}>
+      <section className="border-b py-4" style={{ background: "var(--surface)", borderColor: "var(--border)" }}>
         <div className="max-w-7xl mx-auto px-6 flex flex-wrap items-center justify-center gap-x-8 gap-y-1.5">
           <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: "#4a938d" }}>Serving employees from</span>
           {["ASML", "Applied Materials", "Lam Research", "Tokyo Electron", "KLA", "Synopsys"].map((c) => (
-            <span key={c} className="text-sm font-semibold" style={{ color: "#6B7280" }}>{c}</span>
+            <span key={c} className="text-sm font-semibold" style={{ color: "var(--text-subtle)" }}>{c}</span>
           ))}
         </div>
       </section>
 
       {/* ── FEATURES ── */}
-      <section className="py-24 px-6" style={{ background: "#ffffff" }}>
+      <section className="py-24 px-6" style={{ background: "var(--card-bg)" }}>
         <div className="max-w-7xl mx-auto">
           <div className="max-w-xl mb-14">
-            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#0F766E" }}>Why choose us</p>
-            <h2 className="text-[clamp(1.875rem,1.5rem+1.875vw,2.5rem)] font-bold leading-tight tracking-tighter text-balance" style={{ color: "#0A1F1E" }}>
+            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "var(--teal)" }}>Why choose us</p>
+            <h2 className="text-[clamp(1.875rem,1.5rem+1.875vw,2.5rem)] font-bold leading-tight tracking-tighter text-balance" style={{ color: "var(--text)" }}>
               More than an agent —<br />your partner in Hsinchu
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-12 gap-5">
-            <div className="md:col-span-5 rounded-2xl p-8 flex flex-col justify-between min-h-[260px] card-lift" style={{ background: "#0F766E" }}>
+            <div className="md:col-span-5 rounded-2xl p-8 flex flex-col justify-between min-h-[260px] card-lift" style={{ background: "var(--teal)" }}>
               <Globe size={36} weight="duotone" style={{ color: "#5EEAD4" }} />
               <div>
                 <h3 className="text-xl font-bold text-white mb-2">{features[0].title}</h3>
@@ -119,10 +119,10 @@ export default function EnglishHomePage() {
             </div>
             <div className="md:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-5">
               {features.slice(1).map(({ Icon, title, desc }) => (
-                <div key={title} className="rounded-2xl p-6 border card-lift" style={{ background: "#ffffff", borderColor: "#99F6E4" }}>
-                  <Icon size={28} weight="duotone" style={{ color: "#0F766E" }} />
-                  <h3 className="text-base font-semibold mt-4 mb-1.5" style={{ color: "#0A1F1E" }}>{title}</h3>
-                  <p className="text-sm leading-relaxed" style={{ color: "#52696B" }}>{desc}</p>
+                <div key={title} className="rounded-2xl p-6 border card-lift" style={{ background: "var(--card-bg)", borderColor: "var(--border)" }}>
+                  <Icon size={28} weight="duotone" style={{ color: "var(--teal)" }} />
+                  <h3 className="text-base font-semibold mt-4 mb-1.5" style={{ color: "var(--text)" }}>{title}</h3>
+                  <p className="text-sm leading-relaxed" style={{ color: "var(--text-muted)" }}>{desc}</p>
                 </div>
               ))}
             </div>
@@ -131,21 +131,21 @@ export default function EnglishHomePage() {
       </section>
 
       {/* ── PROCESS ── */}
-      <section className="py-24 px-6" style={{ background: "#F0FDFA" }}>
+      <section className="py-24 px-6" style={{ background: "var(--surface)" }}>
         <div className="max-w-7xl mx-auto">
           <div className="max-w-xl mb-14">
-            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#0F766E" }}>How it works</p>
-            <h2 className="text-[clamp(1.875rem,1.5rem+1.875vw,2.5rem)] font-bold leading-tight tracking-tighter text-balance" style={{ color: "#0A1F1E" }}>
+            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "var(--teal)" }}>How it works</p>
+            <h2 className="text-[clamp(1.875rem,1.5rem+1.875vw,2.5rem)] font-bold leading-tight tracking-tighter text-balance" style={{ color: "var(--text)" }}>
               From first call to move-in, five steps
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-px border rounded-2xl overflow-hidden" style={{ borderColor: "#99F6E4", background: "#99F6E4" }}>
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-px border rounded-2xl overflow-hidden" style={{ borderColor: "var(--border)", background: "#99F6E4" }}>
             {steps.map((s) => (
-              <div key={s.n} className="p-6 flex flex-col gap-4" style={{ background: "#F0FDFA" }}>
-                <span aria-hidden="true" className="text-3xl font-bold tabular-nums" style={{ color: "#0F766E", opacity: 0.25 }}>{s.n}</span>
+              <div key={s.n} className="p-6 flex flex-col gap-4" style={{ background: "var(--surface)" }}>
+                <span aria-hidden="true" className="text-3xl font-bold tabular-nums" style={{ color: "var(--teal)", opacity: 0.25 }}>{s.n}</span>
                 <div>
-                  <h3 className="font-semibold text-sm mb-1" style={{ color: "#0A1F1E" }}>{s.title}</h3>
-                  <p className="text-xs leading-relaxed" style={{ color: "#52696B" }}>{s.desc}</p>
+                  <h3 className="font-semibold text-sm mb-1" style={{ color: "var(--text)" }}>{s.title}</h3>
+                  <p className="text-xs leading-relaxed" style={{ color: "var(--text-muted)" }}>{s.desc}</p>
                 </div>
               </div>
             ))}
@@ -154,26 +154,26 @@ export default function EnglishHomePage() {
       </section>
 
       {/* ── TESTIMONIALS ── */}
-      <section className="py-24 px-6" style={{ background: "#ffffff" }}>
+      <section className="py-24 px-6" style={{ background: "var(--card-bg)" }}>
         <div className="max-w-7xl mx-auto">
           <div className="max-w-xl mb-14">
-            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#0F766E" }}>Reviews</p>
-            <h2 className="text-[clamp(1.875rem,1.5rem+1.875vw,2.5rem)] font-bold leading-tight tracking-tighter text-balance" style={{ color: "#0A1F1E" }}>
+            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "var(--teal)" }}>Reviews</p>
+            <h2 className="text-[clamp(1.875rem,1.5rem+1.875vw,2.5rem)] font-bold leading-tight tracking-tighter text-balance" style={{ color: "var(--text)" }}>
               Expats from 3 continents, same result
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {testimonials.map((t) => (
-              <figure key={t.name} className="rounded-2xl p-8 border card-lift" style={{ background: "#ffffff", borderColor: "#E2E8F0" }}>
+              <figure key={t.name} className="rounded-2xl p-8 border card-lift" style={{ background: "var(--card-bg)", borderColor: "var(--border)" }}>
                 <div className="flex gap-0.5 mb-5">
                   {[...Array(5)].map((_, i) => <Star key={i} size={14} weight="fill" style={{ color: "#D97706" }} />)}
                 </div>
-                <blockquote className="text-sm leading-relaxed mb-6 text-pretty" style={{ color: "#374151" }}>"{t.text}"</blockquote>
-                <figcaption className="flex items-center gap-3 pt-4 border-t" style={{ borderColor: "#F1F5F9" }}>
+                <blockquote className="text-sm leading-relaxed mb-6 text-pretty" style={{ color: "var(--text-secondary)" }}>"{t.text}"</blockquote>
+                <figcaption className="flex items-center gap-3 pt-4 border-t" style={{ borderColor: "var(--border)" }}>
                   <span className="text-2xl" aria-hidden="true">{t.flag}</span>
                   <div>
-                    <div className="text-sm font-semibold" style={{ color: "#0A1F1E" }}>{t.name}</div>
-                    <div className="text-xs" style={{ color: "#6B7280" }}>{t.company}</div>
+                    <div className="text-sm font-semibold" style={{ color: "var(--text)" }}>{t.name}</div>
+                    <div className="text-xs" style={{ color: "var(--text-subtle)" }}>{t.company}</div>
                   </div>
                 </figcaption>
               </figure>
@@ -183,7 +183,7 @@ export default function EnglishHomePage() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="py-24 px-6" style={{ background: "#0369A1" }}>
+      <section className="py-24 px-6" style={{ background: "var(--blue)" }}>
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-[clamp(1.875rem,1.5rem+1.875vw,2.5rem)] font-bold tracking-tighter text-balance text-white mb-4">
             Ready to find your Hsinchu home?
@@ -192,7 +192,7 @@ export default function EnglishHomePage() {
             Free consultation in English, Japanese, or Chinese. Tell us your needs and we'll match you.
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
-            <Link href="/contact" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg font-semibold text-sm" style={{ background: "#ffffff", color: "#0369A1" }}>
+            <Link href="/contact" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg font-semibold text-sm" style={{ background: "var(--card-bg)", color: "var(--blue)" }}>
               Chat on LINE <ArrowRight size={16} weight="bold" />
             </Link>
             <Link href="/contact" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg font-semibold text-sm border text-white" style={{ borderColor: "rgba(255,255,255,0.4)" }}>

@@ -124,7 +124,7 @@ export default function HomePage() {
 
       {/* ══ HERO ══ */}
       <section className="relative min-h-[100dvh] flex items-center overflow-hidden"
-        style={{ background: "#0A1F1E" }}>
+        style={{ background: "var(--hero-bg)" }}>
         {/* Background image */}
         <div className="absolute inset-0">
           <Image
@@ -167,7 +167,7 @@ export default function HomePage() {
             <Link
               href="/contact"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold text-white transition-colors"
-              style={{ background: "#0369A1" }}
+              style={{ background: "var(--blue)" }}
             >
               免費諮詢
               <ArrowRight size={16} weight="bold" />
@@ -199,29 +199,29 @@ export default function HomePage() {
       </section>
 
       {/* ══ TRUST BAR ══ */}
-      <section className="border-b py-4" style={{ background: "#F0FDFA", borderColor: "#99F6E4" }}>
+      <section className="border-b py-4" style={{ background: "var(--surface)", borderColor: "var(--border)" }}>
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-1.5">
             <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: "#3d7870" }}>
               服務外商員工包含
             </span>
             {companies.map((c) => (
-              <span key={c} className="text-sm font-semibold" style={{ color: "#6B7280" }}>{c}</span>
+              <span key={c} className="text-sm font-semibold" style={{ color: "var(--text-subtle)" }}>{c}</span>
             ))}
           </div>
         </div>
       </section>
 
       {/* ══ FEATURES ══ */}
-      <section className="py-24 px-6" style={{ background: "#ffffff" }}>
+      <section className="py-24 px-6" style={{ background: "var(--card-bg)" }}>
         <div className="max-w-7xl mx-auto">
           {/* Left-aligned heading — not centered */}
           <div className="max-w-xl mb-14">
-            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#0F766E" }}>
+            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "var(--teal)" }}>
               為什麼選我們
             </p>
             <h2 className="text-[clamp(1.875rem,1.5rem+1.875vw,2.5rem)] font-bold leading-tight tracking-tighter text-balance"
-              style={{ color: "#0A1F1E" }}>
+              style={{ color: "var(--text)" }}>
               不只是仲介，<br />是你在新竹的夥伴
             </h2>
           </div>
@@ -230,7 +230,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-5">
             {/* Feature 1: large card */}
             <div className="md:col-span-5 rounded-2xl p-8 flex flex-col justify-between min-h-[260px] card-lift"
-              style={{ background: "#0F766E" }}>
+              style={{ background: "var(--teal)" }}>
               <Globe size={36} weight="duotone" style={{ color: "#5EEAD4" }} />
               <div>
                 <h3 className="text-xl font-bold text-white mb-2">{features[0].title}</h3>
@@ -243,10 +243,10 @@ export default function HomePage() {
               {features.slice(1).map(({ Icon, title, desc }) => (
                 <div key={title}
                   className="rounded-2xl p-6 border card-lift"
-                  style={{ background: "#ffffff", borderColor: "#99F6E4" }}>
-                  <Icon size={28} weight="duotone" style={{ color: "#0F766E" }} />
-                  <h3 className="text-base font-semibold mt-4 mb-1.5" style={{ color: "#0A1F1E" }}>{title}</h3>
-                  <p className="text-sm leading-relaxed" style={{ color: "#52696B" }}>{desc}</p>
+                  style={{ background: "var(--card-bg)", borderColor: "var(--border)" }}>
+                  <Icon size={28} weight="duotone" style={{ color: "var(--teal)" }} />
+                  <h3 className="text-base font-semibold mt-4 mb-1.5" style={{ color: "var(--text)" }}>{title}</h3>
+                  <p className="text-sm leading-relaxed" style={{ color: "var(--text-muted)" }}>{desc}</p>
                 </div>
               ))}
             </div>
@@ -255,26 +255,26 @@ export default function HomePage() {
       </section>
 
       {/* ══ PROCESS ══ */}
-      <section className="py-24 px-6" style={{ background: "#F0FDFA" }}>
+      <section className="py-24 px-6" style={{ background: "var(--surface)" }}>
         <div className="max-w-7xl mx-auto">
           <div className="max-w-xl mb-14">
-            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#0F766E" }}>服務流程</p>
+            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "var(--teal)" }}>服務流程</p>
             <h2 className="text-[clamp(1.875rem,1.5rem+1.875vw,2.5rem)] font-bold leading-tight tracking-tighter text-balance"
-              style={{ color: "#0A1F1E" }}>
+              style={{ color: "var(--text)" }}>
               從第一次諮詢到入住，五個步驟
             </h2>
           </div>
 
           {/* Steps: use border-l for visual connection, not identical cards */}
           <div className="grid grid-cols-1 md:grid-cols-5 gap-px border rounded-2xl overflow-hidden"
-            style={{ borderColor: "#99F6E4", background: "#99F6E4" }}>
+            style={{ borderColor: "var(--border)", background: "#99F6E4" }}>
             {steps.map((s) => (
               <div key={s.n} className="p-6 flex flex-col gap-4"
-                style={{ background: "#F0FDFA" }}>
-                <span aria-hidden="true" className="text-3xl font-bold tabular-nums" style={{ color: "#0F766E", opacity: 0.25 }}>{s.n}</span>
+                style={{ background: "var(--surface)" }}>
+                <span aria-hidden="true" className="text-3xl font-bold tabular-nums" style={{ color: "var(--teal)", opacity: 0.25 }}>{s.n}</span>
                 <div>
-                  <h3 className="font-semibold text-sm mb-1" style={{ color: "#0A1F1E" }}>{s.title}</h3>
-                  <p className="text-xs leading-relaxed" style={{ color: "#52696B" }}>{s.desc}</p>
+                  <h3 className="font-semibold text-sm mb-1" style={{ color: "var(--text)" }}>{s.title}</h3>
+                  <p className="text-xs leading-relaxed" style={{ color: "var(--text-muted)" }}>{s.desc}</p>
                 </div>
               </div>
             ))}
@@ -283,33 +283,33 @@ export default function HomePage() {
       </section>
 
       {/* ══ TESTIMONIALS ══ */}
-      <section className="py-24 px-6" style={{ background: "#ffffff" }}>
+      <section className="py-24 px-6" style={{ background: "var(--card-bg)" }}>
         <div className="max-w-7xl mx-auto">
           <div className="max-w-xl mb-14">
-            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#0F766E" }}>客戶評價</p>
+            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "var(--teal)" }}>客戶評價</p>
             <h2 className="text-[clamp(1.875rem,1.5rem+1.875vw,2.5rem)] font-bold leading-tight tracking-tighter text-balance"
-              style={{ color: "#0A1F1E" }}>
+              style={{ color: "var(--text)" }}>
               三語客戶，同樣的好評
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {testimonials.map((t) => (
               <figure key={t.name} className="rounded-2xl p-8 border card-lift"
-                style={{ background: "#ffffff", borderColor: "#E2E8F0" }}>
+                style={{ background: "var(--card-bg)", borderColor: "var(--border)" }}>
                 <div className="flex gap-0.5 mb-5">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} size={14} weight="fill" style={{ color: "#D97706" }} />
                   ))}
                 </div>
                 <blockquote className="text-sm leading-relaxed mb-6 text-pretty"
-                  style={{ color: "#374151" }}>
+                  style={{ color: "var(--text-secondary)" }}>
                   "{t.text}"
                 </blockquote>
-                <figcaption className="flex items-center gap-3 pt-4 border-t" style={{ borderColor: "#F1F5F9" }}>
+                <figcaption className="flex items-center gap-3 pt-4 border-t" style={{ borderColor: "var(--border)" }}>
                   <span className="text-2xl" aria-hidden="true">{t.flag}</span>
                   <div>
-                    <div className="text-sm font-semibold" style={{ color: "#0A1F1E" }}>{t.name}</div>
-                    <div className="text-xs" style={{ color: "#6B7280" }}>{t.company}</div>
+                    <div className="text-sm font-semibold" style={{ color: "var(--text)" }}>{t.name}</div>
+                    <div className="text-xs" style={{ color: "var(--text-subtle)" }}>{t.company}</div>
                   </div>
                 </figcaption>
               </figure>
@@ -319,7 +319,7 @@ export default function HomePage() {
       </section>
 
       {/* ══ BLOG ══ */}
-      <section className="py-24 px-6" style={{ background: "#0A1F1E" }}>
+      <section className="py-24 px-6" style={{ background: "var(--hero-bg)" }}>
         <div className="max-w-7xl mx-auto">
           <div className="flex items-end justify-between mb-14">
             <div className="max-w-xl">
@@ -347,7 +347,7 @@ export default function HomePage() {
                     className="object-cover object-center group-hover:scale-105 transition-transform duration-300" />
                   <div className="absolute inset-0" style={{ background: "linear-gradient(to top, #0A1F1E 0%, transparent 60%)" }} />
                   <span className="absolute top-4 left-4 text-xs font-semibold px-2.5 py-1 rounded-md"
-                    style={{ background: "#0F766E", color: "#F0FDFA" }}>
+                    style={{ background: "var(--teal)", color: "#F0FDFA" }}>
                     {blogPosts[0].tag}
                   </span>
                 </div>
@@ -395,7 +395,7 @@ export default function HomePage() {
       </section>
 
       {/* ══ CTA ══ */}
-      <section className="py-24 px-6" style={{ background: "#0369A1" }}>
+      <section className="py-24 px-6" style={{ background: "var(--blue)" }}>
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-[clamp(1.875rem,1.5rem+1.875vw,2.5rem)] font-bold tracking-tighter text-balance text-white mb-4">
             準備在新竹找到理想的家了嗎？
@@ -407,7 +407,7 @@ export default function HomePage() {
           <div className="flex flex-wrap gap-3 justify-center">
             <Link href="/contact"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg font-semibold text-sm transition-colors"
-              style={{ background: "#ffffff", color: "#0369A1" }}>
+              style={{ background: "var(--card-bg)", color: "var(--blue)" }}>
               LINE 免費諮詢
               <ArrowRight size={16} weight="bold" />
             </Link>

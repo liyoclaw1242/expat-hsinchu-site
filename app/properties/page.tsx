@@ -64,7 +64,7 @@ export default function PropertiesPage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="relative h-64 md:h-72 overflow-hidden" style={{ background: "#0A1F1E" }}>
+      <section className="relative h-64 md:h-72 overflow-hidden" style={{ background: "var(--hero-bg)" }}>
         <Image
           src="/images/properties-banner.png"
           alt="竹北精裝公寓"
@@ -93,13 +93,13 @@ export default function PropertiesPage() {
       </div>
 
       {/* ── Properties Grid ── */}
-      <section className="py-16 px-6" style={{ background: "#ffffff" }}>
+      <section className="py-16 px-6" style={{ background: "var(--card-bg)" }}>
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {properties.map((p) => (
               <article key={p.id}
                 className="rounded-2xl border overflow-hidden card-lift"
-                style={{ borderColor: p.highlight ? "#0F766E" : "#E2E8F0", background: "#ffffff" }}>
+                style={{ borderColor: p.highlight ? "#0F766E" : "#E2E8F0", background: "var(--card-bg)" }}>
                 {/* Image */}
                 <div className="relative h-44 overflow-hidden">
                   <Image
@@ -118,29 +118,29 @@ export default function PropertiesPage() {
                 <div className="p-6">
                   <div className="flex items-start justify-between gap-3 mb-3">
                     <div>
-                      <h2 className="text-base font-bold leading-tight" style={{ color: "#0A1F1E" }}>{p.title}</h2>
-                      <p className="text-xs mt-1 flex items-center gap-1" style={{ color: "#6B7280" }}>
+                      <h2 className="text-base font-bold leading-tight" style={{ color: "var(--text)" }}>{p.title}</h2>
+                      <p className="text-xs mt-1 flex items-center gap-1" style={{ color: "var(--text-subtle)" }}>
                         <span>📍</span> {p.area}
                       </p>
                     </div>
                     <div className="text-right flex-shrink-0">
-                      <div className="text-lg font-bold tabular-nums" style={{ color: "#0F766E" }}>
+                      <div className="text-lg font-bold tabular-nums" style={{ color: "var(--teal)" }}>
                         NT${p.price}
                       </div>
-                      <div className="text-[10px]" style={{ color: "#9BA3AF" }}>/月（含管理費）</div>
+                      <div className="text-[10px]" style={{ color: "var(--text-subtle)" }}>/月（含管理費）</div>
                     </div>
                   </div>
 
                   {/* Stats row */}
-                  <div className="flex flex-wrap gap-3 text-xs mb-4 py-3 border-y" style={{ borderColor: "#F1F5F9", color: "#52696B" }}>
+                  <div className="flex flex-wrap gap-3 text-xs mb-4 py-3 border-y" style={{ borderColor: "var(--border)", color: "var(--text-muted)" }}>
                     <span className="flex items-center gap-1">
-                      <Bed size={13} weight="duotone" style={{ color: "#0F766E" }} /> {p.rooms}
+                      <Bed size={13} weight="duotone" style={{ color: "var(--teal)" }} /> {p.rooms}
                     </span>
                     <span className="flex items-center gap-1">
-                      <Ruler size={13} weight="duotone" style={{ color: "#0F766E" }} /> {p.size}
+                      <Ruler size={13} weight="duotone" style={{ color: "var(--teal)" }} /> {p.size}
                     </span>
                     <span className="flex items-center gap-1">
-                      <Elevator size={13} weight="duotone" style={{ color: "#0F766E" }} /> {p.floor}
+                      <Elevator size={13} weight="duotone" style={{ color: "var(--teal)" }} /> {p.floor}
                     </span>
                   </div>
 
@@ -148,7 +148,7 @@ export default function PropertiesPage() {
                   <div className="flex flex-wrap gap-1.5 mb-5">
                     {p.features.map((f) => (
                       <span key={f} className="text-[11px] px-2.5 py-1 rounded-md font-medium"
-                        style={{ background: "#F0FDFA", color: "#0F766E" }}>
+                        style={{ background: "var(--surface)", color: "var(--teal)" }}>
                         {f}
                       </span>
                     ))}
@@ -156,7 +156,7 @@ export default function PropertiesPage() {
 
                   <Link href="/contact"
                     className="flex w-full items-center justify-center gap-2 py-2.5 rounded-lg text-sm font-semibold text-white transition-colors"
-                    style={{ background: "#0369A1" }}>
+                    style={{ background: "var(--blue)" }}>
                     詢問這間房源
                     <ArrowRight size={15} weight="bold" />
                   </Link>
@@ -167,14 +167,14 @@ export default function PropertiesPage() {
 
           {/* Can't find CTA */}
           <div className="mt-10 rounded-2xl p-8 border flex flex-col md:flex-row items-center justify-between gap-6"
-            style={{ background: "#F0FDFA", borderColor: "#99F6E4" }}>
+            style={{ background: "var(--surface)", borderColor: "var(--border)" }}>
             <div>
-              <h2 className="text-xl font-bold tracking-tight" style={{ color: "#0A1F1E" }}>找不到喜歡的？</h2>
-              <p className="text-sm mt-1" style={{ color: "#52696B" }}>告訴我們您的需求，竹北、新竹全都找</p>
+              <h2 className="text-xl font-bold tracking-tight" style={{ color: "var(--text)" }}>找不到喜歡的？</h2>
+              <p className="text-sm mt-1" style={{ color: "var(--text-muted)" }}>告訴我們您的需求，竹北、新竹全都找</p>
             </div>
             <Link href="/contact"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold text-white flex-shrink-0"
-              style={{ background: "#0369A1" }}>
+              style={{ background: "var(--blue)" }}>
               說說你的需求 <ArrowRight size={15} weight="bold" />
             </Link>
           </div>

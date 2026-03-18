@@ -22,7 +22,7 @@ const properties = [
 export default function EnPropertiesPage() {
   return (
     <>
-      <section className="relative h-64 md:h-72 overflow-hidden" style={{ background: "#0A1F1E" }}>
+      <section className="relative h-64 md:h-72 overflow-hidden" style={{ background: "var(--hero-bg)" }}>
         <Image src="/images/properties-banner.png" alt="Furnished expat apartment in Zhubei Hsinchu" fill className="object-cover object-center opacity-55" priority />
         <div className="absolute inset-0" style={{ background: "linear-gradient(to right, #0A1F1E 40%, #0A1F1E55 70%, transparent)" }} />
         <div className="absolute inset-0 flex items-center px-8 md:px-16">
@@ -40,11 +40,11 @@ export default function EnPropertiesPage() {
         </div>
       </div>
 
-      <section className="py-16 px-6" style={{ background: "#ffffff" }}>
+      <section className="py-16 px-6" style={{ background: "var(--card-bg)" }}>
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {properties.map((p) => (
-              <article key={p.id} className="rounded-2xl border overflow-hidden card-lift" style={{ borderColor: p.highlight ? "#0F766E" : "#E2E8F0", background: "#ffffff" }}>
+              <article key={p.id} className="rounded-2xl border overflow-hidden card-lift" style={{ borderColor: p.highlight ? "#0F766E" : "#E2E8F0", background: "var(--card-bg)" }}>
                 <div className="relative h-44 overflow-hidden">
                   <Image src="/images/properties-banner.png" alt={p.title} fill className="object-cover object-center" />
                   <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(10,31,30,0.5) 0%, transparent 50%)" }} />
@@ -53,35 +53,35 @@ export default function EnPropertiesPage() {
                 <div className="p-6">
                   <div className="flex items-start justify-between gap-3 mb-3">
                     <div>
-                      <h2 className="text-base font-bold leading-tight" style={{ color: "#0A1F1E" }}>{p.title}</h2>
-                      <p className="text-xs mt-1" style={{ color: "#6B7280" }}>📍 {p.area}</p>
+                      <h2 className="text-base font-bold leading-tight" style={{ color: "var(--text)" }}>{p.title}</h2>
+                      <p className="text-xs mt-1" style={{ color: "var(--text-subtle)" }}>📍 {p.area}</p>
                     </div>
                     <div className="text-right flex-shrink-0">
-                      <div className="text-lg font-bold tabular-nums" style={{ color: "#0F766E" }}>NT${p.price}</div>
-                      <div className="text-[10px]" style={{ color: "#9BA3AF" }}>/month (incl. mgmt fee)</div>
+                      <div className="text-lg font-bold tabular-nums" style={{ color: "var(--teal)" }}>NT${p.price}</div>
+                      <div className="text-[10px]" style={{ color: "var(--text-subtle)" }}>/month (incl. mgmt fee)</div>
                     </div>
                   </div>
-                  <div className="flex flex-wrap gap-3 text-xs mb-4 py-3 border-y" style={{ borderColor: "#F1F5F9", color: "#52696B" }}>
-                    <span className="flex items-center gap-1"><Bed size={13} weight="duotone" style={{ color: "#0F766E" }} /> {p.rooms}</span>
-                    <span className="flex items-center gap-1"><Ruler size={13} weight="duotone" style={{ color: "#0F766E" }} /> {p.size}</span>
-                    <span className="flex items-center gap-1"><Elevator size={13} weight="duotone" style={{ color: "#0F766E" }} /> {p.floor}</span>
+                  <div className="flex flex-wrap gap-3 text-xs mb-4 py-3 border-y" style={{ borderColor: "var(--border)", color: "var(--text-muted)" }}>
+                    <span className="flex items-center gap-1"><Bed size={13} weight="duotone" style={{ color: "var(--teal)" }} /> {p.rooms}</span>
+                    <span className="flex items-center gap-1"><Ruler size={13} weight="duotone" style={{ color: "var(--teal)" }} /> {p.size}</span>
+                    <span className="flex items-center gap-1"><Elevator size={13} weight="duotone" style={{ color: "var(--teal)" }} /> {p.floor}</span>
                   </div>
                   <div className="flex flex-wrap gap-1.5 mb-5">
-                    {p.features.map((f) => <span key={f} className="text-[11px] px-2.5 py-1 rounded-md font-medium" style={{ background: "#F0FDFA", color: "#0F766E" }}>{f}</span>)}
+                    {p.features.map((f) => <span key={f} className="text-[11px] px-2.5 py-1 rounded-md font-medium" style={{ background: "var(--surface)", color: "var(--teal)" }}>{f}</span>)}
                   </div>
-                  <Link href="/contact" className="flex w-full items-center justify-center gap-2 py-2.5 rounded-lg text-sm font-semibold text-white" style={{ background: "#0369A1" }}>
+                  <Link href="/contact" className="flex w-full items-center justify-center gap-2 py-2.5 rounded-lg text-sm font-semibold text-white" style={{ background: "var(--blue)" }}>
                     Enquire about this property <ArrowRight size={15} weight="bold" />
                   </Link>
                 </div>
               </article>
             ))}
           </div>
-          <div className="mt-10 rounded-2xl p-8 border flex flex-col md:flex-row items-center justify-between gap-6" style={{ background: "#F0FDFA", borderColor: "#99F6E4" }}>
+          <div className="mt-10 rounded-2xl p-8 border flex flex-col md:flex-row items-center justify-between gap-6" style={{ background: "var(--surface)", borderColor: "var(--border)" }}>
             <div>
-              <h2 className="text-xl font-bold tracking-tight" style={{ color: "#0A1F1E" }}>Don't see what you need?</h2>
-              <p className="text-sm mt-1" style={{ color: "#52696B" }}>Tell us your requirements — we'll search across Zhubei and Hsinchu</p>
+              <h2 className="text-xl font-bold tracking-tight" style={{ color: "var(--text)" }}>Don't see what you need?</h2>
+              <p className="text-sm mt-1" style={{ color: "var(--text-muted)" }}>Tell us your requirements — we'll search across Zhubei and Hsinchu</p>
             </div>
-            <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold text-white flex-shrink-0" style={{ background: "#0369A1" }}>
+            <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold text-white flex-shrink-0" style={{ background: "var(--blue)" }}>
               Tell us what you need <ArrowRight size={15} weight="bold" />
             </Link>
           </div>

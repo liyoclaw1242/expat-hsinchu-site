@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { List, X } from "@phosphor-icons/react";
+import ThemeToggle from "./ThemeToggle";
 
 type Locale = "zh" | "en" | "ja";
 
@@ -51,8 +52,8 @@ export default function Header() {
 
   return (
     <header
-      className="bg-white border-b sticky top-0 z-50"
-      style={{ borderBottomColor: "#99F6E4" }}
+      className="border-b sticky top-0 z-50"
+      style={{ background: "var(--card-bg)", borderBottomColor: "var(--border)" }}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
@@ -116,6 +117,9 @@ export default function Header() {
                 日
               </Link>
             </div>
+
+            {/* Theme toggle */}
+            <ThemeToggle />
 
             {/* CTA */}
             <Link

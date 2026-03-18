@@ -76,39 +76,39 @@ export default function ContactPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* ── Header ── */}
-      <section className="py-16 px-6 border-b" style={{ background: "#F0FDFA", borderColor: "#99F6E4" }}>
+      <section className="py-16 px-6 border-b" style={{ background: "var(--surface)", borderColor: "var(--border)" }}>
         <div className="max-w-4xl mx-auto">
-          <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#0F766E" }}>聯絡我們</p>
+          <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "var(--teal)" }}>聯絡我們</p>
           <h1 className="text-[clamp(2.25rem,1.75rem+2.5vw,3.5rem)] font-bold tracking-tighter text-balance mb-3"
-            style={{ color: "#0A1F1E" }}>
+            style={{ color: "var(--text)" }}>
             英語・日語・中文，<br />任選一種
           </h1>
-          <p className="text-base leading-relaxed max-w-[52ch] text-pretty" style={{ color: "#52696B" }}>
+          <p className="text-base leading-relaxed max-w-[52ch] text-pretty" style={{ color: "var(--text-muted)" }}>
             我們都接得住。免費諮詢，告訴我們您的需求，我們為您量身配對。
           </p>
         </div>
       </section>
 
       {/* ── Channels ── */}
-      <section className="py-16 px-6" style={{ background: "#ffffff" }}>
+      <section className="py-16 px-6" style={{ background: "var(--card-bg)" }}>
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {channels.map(({ Icon, title, handle, desc, cta, href, lang }) => (
               <div key={title} className="rounded-2xl border p-6 flex flex-col gap-4"
-                style={{ borderColor: "#99F6E4", background: "#ffffff" }}>
+                style={{ borderColor: "var(--border)", background: "var(--card-bg)" }}>
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center"
-                  style={{ background: "#F0FDFA" }}>
-                  <Icon size={22} weight="duotone" style={{ color: "#0F766E" }} />
+                  style={{ background: "var(--surface)" }}>
+                  <Icon size={22} weight="duotone" style={{ color: "var(--teal)" }} />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-base font-bold mb-0.5" style={{ color: "#0A1F1E" }}>{title}</h2>
-                  <p className="text-xs font-medium mb-2" style={{ color: "#0F766E" }}>{handle}</p>
-                  <p className="text-xs leading-relaxed mb-2" style={{ color: "#52696B" }}>{desc}</p>
-                  <p className="text-[10px] font-medium uppercase tracking-wide" style={{ color: "#9BA3AF" }}>{lang}</p>
+                  <h2 className="text-base font-bold mb-0.5" style={{ color: "var(--text)" }}>{title}</h2>
+                  <p className="text-xs font-medium mb-2" style={{ color: "var(--teal)" }}>{handle}</p>
+                  <p className="text-xs leading-relaxed mb-2" style={{ color: "var(--text-muted)" }}>{desc}</p>
+                  <p className="text-[10px] font-medium uppercase tracking-wide" style={{ color: "var(--text-subtle)" }}>{lang}</p>
                 </div>
                 <a href={href}
                   className="inline-flex items-center justify-center gap-1.5 py-2.5 rounded-lg text-sm font-semibold text-white transition-colors"
-                  style={{ background: "#0369A1" }}>
+                  style={{ background: "var(--blue)" }}>
                   {cta} <ArrowRight size={14} weight="bold" />
                 </a>
               </div>
@@ -117,7 +117,7 @@ export default function ContactPage() {
 
           {/* Hours note */}
           <div className="mt-6 flex items-center gap-3 px-5 py-3.5 rounded-xl border text-sm"
-            style={{ background: "#F0FDFA", borderColor: "#99F6E4", color: "#52696B" }}>
+            style={{ background: "var(--surface)", borderColor: "var(--border)", color: "var(--text-muted)" }}>
             <span className="text-base">🕘</span>
             服務時間：週一至週六 09:00–18:00 (GMT+8)
           </div>
@@ -125,28 +125,28 @@ export default function ContactPage() {
       </section>
 
       {/* ── FAQ ── */}
-      <section className="py-16 px-6" style={{ background: "#F0FDFA" }}>
+      <section className="py-16 px-6" style={{ background: "var(--surface)" }}>
         <div className="max-w-4xl mx-auto">
           <div className="max-w-xl mb-10">
-            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#0F766E" }}>FAQ</p>
+            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "var(--teal)" }}>FAQ</p>
             <h2 className="text-[clamp(1.875rem,1.5rem+1.875vw,2.5rem)] font-bold tracking-tighter text-balance"
-              style={{ color: "#0A1F1E" }}>
+              style={{ color: "var(--text)" }}>
               常見問題
             </h2>
           </div>
 
           <div className="divide-y rounded-2xl overflow-hidden border"
-            style={{ borderColor: "#99F6E4" }}>
+            style={{ borderColor: "var(--border)" }}>
             {faqs.map((faq, i) => (
-              <details key={i} className="group" style={{ background: "#ffffff" }}>
+              <details key={i} className="group" style={{ background: "var(--card-bg)" }}>
                 <summary className="flex items-center justify-between px-6 py-4 cursor-pointer list-none gap-4"
-                  style={{ color: "#0A1F1E" }}>
+                  style={{ color: "var(--text)" }}>
                   <span className="text-sm font-medium">{faq.q}</span>
                   <span className="text-lg flex-shrink-0 transition-transform group-open:rotate-45"
-                    style={{ color: "#0F766E" }}>+</span>
+                    style={{ color: "var(--teal)" }}>+</span>
                 </summary>
                 <p className="px-6 pb-5 text-sm leading-relaxed text-pretty"
-                  style={{ color: "#52696B" }}>{faq.a}</p>
+                  style={{ color: "var(--text-muted)" }}>{faq.a}</p>
               </details>
             ))}
           </div>

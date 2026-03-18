@@ -31,7 +31,7 @@ const tenantServices = [
 export default function EnServicesPage() {
   return (
     <>
-      <section className="relative h-64 md:h-80 overflow-hidden" style={{ background: "#0A1F1E" }}>
+      <section className="relative h-64 md:h-80 overflow-hidden" style={{ background: "var(--hero-bg)" }}>
         <Image src="/images/services-banner.png" alt="易澤居 EasyRent professional property management service" fill className="object-cover object-center opacity-50" priority />
         <div className="absolute inset-0" style={{ background: "linear-gradient(to right, #0A1F1E 40%, #0A1F1E66 70%, transparent)" }} />
         <div className="absolute inset-0 flex items-center px-8 md:px-16 max-w-7xl mx-auto">
@@ -43,14 +43,14 @@ export default function EnServicesPage() {
         </div>
       </section>
 
-      <section className="py-20 px-6" style={{ background: "#ffffff" }}>
+      <section className="py-20 px-6" style={{ background: "var(--card-bg)" }}>
         <div className="max-w-5xl mx-auto">
           <div className="max-w-xl mb-12">
-            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#0F766E" }}>For Landlords</p>
-            <h2 className="text-[clamp(1.875rem,1.5rem+1.875vw,2.5rem)] font-bold tracking-tighter text-balance" style={{ color: "#0A1F1E" }}>Property Management</h2>
+            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "var(--teal)" }}>For Landlords</p>
+            <h2 className="text-[clamp(1.875rem,1.5rem+1.875vw,2.5rem)] font-bold tracking-tighter text-balance" style={{ color: "var(--text)" }}>Property Management</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
-            <div className="md:col-span-5 rounded-2xl p-8 flex flex-col justify-between min-h-[220px]" style={{ background: "#0F766E" }}>
+            <div className="md:col-span-5 rounded-2xl p-8 flex flex-col justify-between min-h-[220px]" style={{ background: "var(--teal)" }}>
               <UsersFour size={36} weight="duotone" style={{ color: "#5EEAD4" }} />
               <div>
                 <h3 className="text-xl font-bold text-white mb-2">{landlordServices[0].title}</h3>
@@ -59,10 +59,10 @@ export default function EnServicesPage() {
             </div>
             <div className="md:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
               {landlordServices.slice(1).map(({ Icon, title, desc }) => (
-                <div key={title} className="rounded-2xl p-6 border" style={{ background: "#ffffff", borderColor: "#99F6E4" }}>
-                  <Icon size={26} weight="duotone" style={{ color: "#0F766E" }} />
-                  <h3 className="text-sm font-semibold mt-4 mb-1.5" style={{ color: "#0A1F1E" }}>{title}</h3>
-                  <p className="text-xs leading-relaxed" style={{ color: "#52696B" }}>{desc}</p>
+                <div key={title} className="rounded-2xl p-6 border" style={{ background: "var(--card-bg)", borderColor: "var(--border)" }}>
+                  <Icon size={26} weight="duotone" style={{ color: "var(--teal)" }} />
+                  <h3 className="text-sm font-semibold mt-4 mb-1.5" style={{ color: "var(--text)" }}>{title}</h3>
+                  <p className="text-xs leading-relaxed" style={{ color: "var(--text-muted)" }}>{desc}</p>
                 </div>
               ))}
             </div>
@@ -70,44 +70,44 @@ export default function EnServicesPage() {
         </div>
       </section>
 
-      <section className="py-20 px-6" style={{ background: "#F0FDFA" }}>
+      <section className="py-20 px-6" style={{ background: "var(--surface)" }}>
         <div className="max-w-5xl mx-auto">
           <div className="max-w-xl mb-12">
-            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#0F766E" }}>For Tenants</p>
-            <h2 className="text-[clamp(1.875rem,1.5rem+1.875vw,2.5rem)] font-bold tracking-tighter text-balance" style={{ color: "#0A1F1E" }}>Finding Your Home</h2>
+            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "var(--teal)" }}>For Tenants</p>
+            <h2 className="text-[clamp(1.875rem,1.5rem+1.875vw,2.5rem)] font-bold tracking-tighter text-balance" style={{ color: "var(--text)" }}>Finding Your Home</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {tenantServices.map(({ Icon, title, desc }) => (
-              <div key={title} className="rounded-2xl p-6 border" style={{ background: "#ffffff", borderColor: "#99F6E4" }}>
-                <Icon size={26} weight="duotone" style={{ color: "#0F766E" }} />
-                <h3 className="text-sm font-semibold mt-4 mb-1.5" style={{ color: "#0A1F1E" }}>{title}</h3>
-                <p className="text-xs leading-relaxed" style={{ color: "#52696B" }}>{desc}</p>
+              <div key={title} className="rounded-2xl p-6 border" style={{ background: "var(--card-bg)", borderColor: "var(--border)" }}>
+                <Icon size={26} weight="duotone" style={{ color: "var(--teal)" }} />
+                <h3 className="text-sm font-semibold mt-4 mb-1.5" style={{ color: "var(--text)" }}>{title}</h3>
+                <p className="text-xs leading-relaxed" style={{ color: "var(--text-muted)" }}>{desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-20 px-6" style={{ background: "#ffffff" }}>
+      <section className="py-20 px-6" style={{ background: "var(--card-bg)" }}>
         <div className="max-w-5xl mx-auto">
           <div className="max-w-xl mb-12">
-            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#0F766E" }}>Transparent Pricing</p>
-            <h2 className="text-[clamp(1.875rem,1.5rem+1.875vw,2.5rem)] font-bold tracking-tighter text-balance" style={{ color: "#0A1F1E" }}>Pricing</h2>
+            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "var(--teal)" }}>Transparent Pricing</p>
+            <h2 className="text-[clamp(1.875rem,1.5rem+1.875vw,2.5rem)] font-bold tracking-tighter text-balance" style={{ color: "var(--text)" }}>Pricing</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="rounded-2xl p-8 border" style={{ borderColor: "#99F6E4", background: "#F0FDFA" }}>
-              <p className="text-xs font-semibold uppercase tracking-wider mb-4" style={{ color: "#0F766E" }}>Landlord Management Fee</p>
-              <div className="text-5xl font-bold tabular-nums mb-2 tracking-tighter" style={{ color: "#0F766E" }}>8–10%</div>
-              <p className="text-xs mb-6" style={{ color: "#52696B" }}>of monthly rent</p>
+            <div className="rounded-2xl p-8 border" style={{ borderColor: "var(--border)", background: "var(--surface)" }}>
+              <p className="text-xs font-semibold uppercase tracking-wider mb-4" style={{ color: "var(--teal)" }}>Landlord Management Fee</p>
+              <div className="text-5xl font-bold tabular-nums mb-2 tracking-tighter" style={{ color: "var(--teal)" }}>8–10%</div>
+              <p className="text-xs mb-6" style={{ color: "var(--text-muted)" }}>of monthly rent</p>
               <ul className="space-y-2.5">
                 {["Rent collection & maintenance", "Trilingual communication", "Emergency handling"].map((item) => (
-                  <li key={item} className="flex items-center gap-2.5 text-sm" style={{ color: "#374151" }}>
-                    <CheckCircle size={16} weight="fill" style={{ color: "#0F766E", flexShrink: 0 }} />{item}
+                  <li key={item} className="flex items-center gap-2.5 text-sm" style={{ color: "var(--text-secondary)" }}>
+                    <CheckCircle size={16} weight="fill" style={{ color: "var(--teal)", flexShrink: 0 }} />{item}
                   </li>
                 ))}
               </ul>
             </div>
-            <div className="rounded-2xl p-8 text-white" style={{ background: "#0369A1" }}>
+            <div className="rounded-2xl p-8 text-white" style={{ background: "var(--blue)" }}>
               <p className="text-xs font-semibold uppercase tracking-wider mb-4" style={{ color: "oklch(85% 0.04 220)" }}>Tenant Placement</p>
               <div className="text-5xl font-bold mb-2 tracking-tighter">Free</div>
               <p className="text-xs mb-6" style={{ color: "oklch(85% 0.04 220)" }}>Basic tenant search is free</p>
@@ -123,13 +123,13 @@ export default function EnServicesPage() {
         </div>
       </section>
 
-      <section className="py-16 px-6" style={{ background: "#F0FDFA" }}>
+      <section className="py-16 px-6" style={{ background: "var(--surface)" }}>
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <h2 className="text-2xl font-bold tracking-tight" style={{ color: "#0A1F1E" }}>Free Consultation</h2>
-            <p className="text-sm mt-1" style={{ color: "#52696B" }}>English, Japanese, or Chinese — we speak your language</p>
+            <h2 className="text-2xl font-bold tracking-tight" style={{ color: "var(--text)" }}>Free Consultation</h2>
+            <p className="text-sm mt-1" style={{ color: "var(--text-muted)" }}>English, Japanese, or Chinese — we speak your language</p>
           </div>
-          <Link href="/contact" className="inline-flex items-center gap-2 px-7 py-3 rounded-lg text-sm font-semibold text-white flex-shrink-0" style={{ background: "#0369A1" }}>
+          <Link href="/contact" className="inline-flex items-center gap-2 px-7 py-3 rounded-lg text-sm font-semibold text-white flex-shrink-0" style={{ background: "var(--blue)" }}>
             Get in touch <ArrowRight size={16} weight="bold" />
           </Link>
         </div>

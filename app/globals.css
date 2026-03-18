@@ -1,41 +1,47 @@
 @import "tailwindcss";
 
 :root {
-  /* Real Estate palette (from industry-colors.md #36) */
-  /* Primary: Trust Teal #0F766E, Accent: Professional Blue #0369A1 */
+  /* Light mode — Real Estate teal palette */
+  --bg: #f8fbfb;
+  --surface: #F0FDFA;
+  --border: #99F6E4;
+  --text: #0A1F1E;
+  --text-secondary: #374151;
+  --text-muted: #52696B;
+  --text-subtle: #6B7280;
 
-  /* Neutrals — tinted toward teal hue for subconscious brand cohesion */
-  --bg:      oklch(98% 0.004 178);    /* teal-tinted near-white */
-  --surface: oklch(96% 0.006 178);
-  --border:  oklch(88% 0.009 178);
-  --text:    oklch(14% 0.008 178);    /* teal-tinted near-black */
-  --muted:   oklch(52% 0.008 178);
+  --teal: #0F766E;
+  --teal-light: #0D9488;
+  --teal-subtle: #F0FDFA;
+  --blue: #0369A1;
 
-  /* Brand */
-  --teal:         #0F766E;
-  --teal-light:   #0D9488;
-  --teal-subtle:  #F0FDFA;
-  --teal-border:  #99F6E4;
+  --hero-bg: #0A1F1E;
+  --card-bg: #ffffff;
+  --footer-bg: #060F0F;
 
-  /* Accent (CTA) */
-  --blue:         #0369A1;
-  --blue-light:   #0284C7;
-  --blue-subtle:  #E0F2FE;
+  color-scheme: light;
+}
 
-  /* Dark hero surface */
-  --navy:       #0A1F1E;   /* very dark teal — NOT pure black */
-  --navy-mid:   #0F2B29;
+.dark {
+  /* Dark mode — teal-tinted zinc */
+  --bg: #0c1414;
+  --surface: #111c1b;
+  --border: #1e3331;
+  --text: #e8f0ef;
+  --text-secondary: #b8c9c7;
+  --text-muted: #8a9e9c;
+  --text-subtle: #6b8280;
 
-  /* Type scale — fluid */
-  --text-xs:   clamp(0.75rem,  0.7rem + 0.25vw, 0.875rem);
-  --text-sm:   clamp(0.875rem, 0.8rem + 0.375vw, 1rem);
-  --text-base: clamp(1rem,     0.9rem + 0.5vw,   1.125rem);
-  --text-lg:   clamp(1.125rem, 1rem + 0.625vw,   1.25rem);
-  --text-xl:   clamp(1.25rem,  1.1rem + 0.75vw,  1.5rem);
-  --text-2xl:  clamp(1.5rem,   1.3rem + 1vw,     2rem);
-  --text-3xl:  clamp(1.875rem, 1.5rem + 1.875vw, 2.5rem);
-  --text-4xl:  clamp(2.25rem,  1.75rem + 2.5vw,  3.5rem);
-  --text-5xl:  clamp(3rem,     2rem + 5vw,       5rem);
+  --teal: #2dd4bf;
+  --teal-light: #5eead4;
+  --teal-subtle: #111c1b;
+  --blue: #38bdf8;
+
+  --hero-bg: #080f0f;
+  --card-bg: #162221;
+  --footer-bg: #060c0c;
+
+  color-scheme: dark;
 }
 
 * { box-sizing: border-box; }
@@ -47,9 +53,10 @@ html {
 }
 
 body {
-  background: oklch(98% 0.004 178);
-  color: oklch(14% 0.008 178);
+  background: var(--bg);
+  color: var(--text);
   line-height: 1.6;
+  transition: background-color 200ms ease-out, color 200ms ease-out;
 }
 
 /* Interactive feedback — 150ms max, transform+opacity only */
@@ -63,4 +70,5 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   .card-lift { transition: none; }
+  body { transition: none; }
 }

@@ -3,7 +3,7 @@ import { Phone, EnvelopeSimple, ChatCircle } from "@phosphor-icons/react/dist/ss
 
 export default function Footer() {
   return (
-    <footer style={{ background: "#060F0F", color: "#F0FDFA" }}>
+    <footer style={{ background: "var(--footer-bg)", color: "#F0FDFA" }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-14">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
 
@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="md:col-span-2">
             <Link href="/" className="flex items-center gap-2.5 mb-5 w-fit">
               <div className="w-8 h-8 rounded-lg flex items-center justify-center text-white text-sm font-bold"
-                style={{ background: "#0F766E" }}>E</div>
+                style={{ background: "var(--teal)" }}>E</div>
               <div className="leading-none">
                 <span className="text-[15px] font-semibold tracking-tight text-white">EasyRent</span>
                 <span className="text-[11px] block font-medium" style={{ color: "#5EEAD4" }}>新竹</span>
@@ -56,7 +56,7 @@ export default function Footer() {
                 { Icon: EnvelopeSimple, label: "info@198evsjq.com" },
               ].map(({ Icon, label }) => (
                 <li key={label} className="flex items-center gap-2.5 text-sm" style={{ color: "oklch(65% 0.015 178)" }}>
-                  <Icon size={15} weight="regular" style={{ color: "#0F766E", flexShrink: 0 }} />
+                  <Icon size={15} weight="regular" style={{ color: "var(--teal)", flexShrink: 0 }} />
                   {label}
                 </li>
               ))}

@@ -94,7 +94,7 @@ export default function ServicesPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* ── Hero Banner ── */}
-      <section className="relative h-64 md:h-80 overflow-hidden" style={{ background: "#0A1F1E" }}>
+      <section className="relative h-64 md:h-80 overflow-hidden" style={{ background: "var(--hero-bg)" }}>
         <Image
           src="/images/services-banner.png"
           alt="易澤居 EasyRent 專業代管服務"
@@ -118,12 +118,12 @@ export default function ServicesPage() {
       </section>
 
       {/* ── Landlord Services ── */}
-      <section className="py-20 px-6" style={{ background: "#ffffff" }}>
+      <section className="py-20 px-6" style={{ background: "var(--card-bg)" }}>
         <div className="max-w-5xl mx-auto">
           <div className="max-w-xl mb-12">
-            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#0F766E" }}>房東</p>
+            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "var(--teal)" }}>房東</p>
             <h2 className="text-[clamp(1.875rem,1.5rem+1.875vw,2.5rem)] font-bold tracking-tighter text-balance"
-              style={{ color: "#0A1F1E" }}>
+              style={{ color: "var(--text)" }}>
               房東代管服務
             </h2>
           </div>
@@ -131,7 +131,7 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
             {/* Large featured card */}
             <div className="md:col-span-5 rounded-2xl p-8 flex flex-col justify-between min-h-[220px]"
-              style={{ background: "#0F766E" }}>
+              style={{ background: "var(--teal)" }}>
               <UsersFour size={36} weight="duotone" style={{ color: "#5EEAD4" }} />
               <div>
                 <h3 className="text-xl font-bold text-white mb-2">{landlordServices[0].title}</h3>
@@ -142,10 +142,10 @@ export default function ServicesPage() {
             <div className="md:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
               {landlordServices.slice(1).map(({ Icon, title, desc }) => (
                 <div key={title} className="rounded-2xl p-6 border"
-                  style={{ background: "#ffffff", borderColor: "#99F6E4" }}>
-                  <Icon size={26} weight="duotone" style={{ color: "#0F766E" }} />
-                  <h3 className="text-sm font-semibold mt-4 mb-1.5" style={{ color: "#0A1F1E" }}>{title}</h3>
-                  <p className="text-xs leading-relaxed" style={{ color: "#52696B" }}>{desc}</p>
+                  style={{ background: "var(--card-bg)", borderColor: "var(--border)" }}>
+                  <Icon size={26} weight="duotone" style={{ color: "var(--teal)" }} />
+                  <h3 className="text-sm font-semibold mt-4 mb-1.5" style={{ color: "var(--text)" }}>{title}</h3>
+                  <p className="text-xs leading-relaxed" style={{ color: "var(--text-muted)" }}>{desc}</p>
                 </div>
               ))}
             </div>
@@ -154,12 +154,12 @@ export default function ServicesPage() {
       </section>
 
       {/* ── Tenant Services ── */}
-      <section className="py-20 px-6" style={{ background: "#F0FDFA" }}>
+      <section className="py-20 px-6" style={{ background: "var(--surface)" }}>
         <div className="max-w-5xl mx-auto">
           <div className="max-w-xl mb-12">
-            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#0F766E" }}>租客</p>
+            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "var(--teal)" }}>租客</p>
             <h2 className="text-[clamp(1.875rem,1.5rem+1.875vw,2.5rem)] font-bold tracking-tighter text-balance"
-              style={{ color: "#0A1F1E" }}>
+              style={{ color: "var(--text)" }}>
               租客找房服務
             </h2>
           </div>
@@ -167,10 +167,10 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {tenantServices.map(({ Icon, title, desc }) => (
               <div key={title} className="rounded-2xl p-6 border"
-                style={{ background: "#ffffff", borderColor: "#99F6E4" }}>
-                <Icon size={26} weight="duotone" style={{ color: "#0F766E" }} />
-                <h3 className="text-sm font-semibold mt-4 mb-1.5" style={{ color: "#0A1F1E" }}>{title}</h3>
-                <p className="text-xs leading-relaxed" style={{ color: "#52696B" }}>{desc}</p>
+                style={{ background: "var(--card-bg)", borderColor: "var(--border)" }}>
+                <Icon size={26} weight="duotone" style={{ color: "var(--teal)" }} />
+                <h3 className="text-sm font-semibold mt-4 mb-1.5" style={{ color: "var(--text)" }}>{title}</h3>
+                <p className="text-xs leading-relaxed" style={{ color: "var(--text-muted)" }}>{desc}</p>
               </div>
             ))}
           </div>
@@ -178,39 +178,39 @@ export default function ServicesPage() {
       </section>
 
       {/* ── Pricing ── */}
-      <section className="py-20 px-6" style={{ background: "#ffffff" }}>
+      <section className="py-20 px-6" style={{ background: "var(--card-bg)" }}>
         <div className="max-w-5xl mx-auto">
           <div className="max-w-xl mb-12">
-            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#0F766E" }}>透明費用</p>
+            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "var(--teal)" }}>透明費用</p>
             <h2 className="text-[clamp(1.875rem,1.5rem+1.875vw,2.5rem)] font-bold tracking-tighter text-balance"
-              style={{ color: "#0A1F1E" }}>
+              style={{ color: "var(--text)" }}>
               費用說明
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Landlord pricing */}
-            <div className="rounded-2xl p-8 border" style={{ borderColor: "#99F6E4", background: "#F0FDFA" }}>
-              <p className="text-xs font-semibold uppercase tracking-wider mb-4" style={{ color: "#0F766E" }}>房東代管費</p>
-              <div className="text-5xl font-bold tabular-nums mb-2 tracking-tighter" style={{ color: "#0F766E" }}>8–10%</div>
-              <p className="text-xs mb-6" style={{ color: "#52696B" }}>每月租金之百分比</p>
+            <div className="rounded-2xl p-8 border" style={{ borderColor: "var(--border)", background: "var(--surface)" }}>
+              <p className="text-xs font-semibold uppercase tracking-wider mb-4" style={{ color: "var(--teal)" }}>房東代管費</p>
+              <div className="text-5xl font-bold tabular-nums mb-2 tracking-tighter" style={{ color: "var(--teal)" }}>8–10%</div>
+              <p className="text-xs mb-6" style={{ color: "var(--text-muted)" }}>每月租金之百分比</p>
               <ul className="space-y-2.5">
                 {[
                   "收租、維修協調、月報告",
                   "三語溝通服務",
                   "緊急聯絡處理",
                 ].map((item) => (
-                  <li key={item} className="flex items-center gap-2.5 text-sm" style={{ color: "#374151" }}>
-                    <CheckCircle size={16} weight="fill" style={{ color: "#0F766E", flexShrink: 0 }} />
+                  <li key={item} className="flex items-center gap-2.5 text-sm" style={{ color: "var(--text-secondary)" }}>
+                    <CheckCircle size={16} weight="fill" style={{ color: "var(--teal)", flexShrink: 0 }} />
                     {item}
                   </li>
                 ))}
               </ul>
-              <p className="text-xs mt-4" style={{ color: "#9BA3AF" }}>* 首次找租客另計仲介服務費</p>
+              <p className="text-xs mt-4" style={{ color: "var(--text-subtle)" }}>* 首次找租客另計仲介服務費</p>
             </div>
 
             {/* Tenant pricing */}
-            <div className="rounded-2xl p-8 text-white" style={{ background: "#0369A1" }}>
+            <div className="rounded-2xl p-8 text-white" style={{ background: "var(--blue)" }}>
               <p className="text-xs font-semibold uppercase tracking-wider mb-4" style={{ color: "oklch(85% 0.04 220)" }}>
                 租客找房服務
               </p>
@@ -227,22 +227,22 @@ export default function ServicesPage() {
             </div>
           </div>
 
-          <p className="text-xs mt-4" style={{ color: "#9BA3AF" }}>
+          <p className="text-xs mt-4" style={{ color: "var(--text-subtle)" }}>
             實際費用視服務範圍而定，歡迎免費諮詢
           </p>
         </div>
       </section>
 
       {/* ── CTA ── */}
-      <section className="py-16 px-6" style={{ background: "#F0FDFA" }}>
+      <section className="py-16 px-6" style={{ background: "var(--surface)" }}>
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <h2 className="text-2xl font-bold tracking-tight" style={{ color: "#0A1F1E" }}>立即免費諮詢</h2>
-            <p className="text-sm mt-1" style={{ color: "#52696B" }}>英日中均可，告訴我們您的需求</p>
+            <h2 className="text-2xl font-bold tracking-tight" style={{ color: "var(--text)" }}>立即免費諮詢</h2>
+            <p className="text-sm mt-1" style={{ color: "var(--text-muted)" }}>英日中均可，告訴我們您的需求</p>
           </div>
           <Link href="/contact"
             className="inline-flex items-center gap-2 px-7 py-3 rounded-lg text-sm font-semibold text-white flex-shrink-0"
-            style={{ background: "#0369A1" }}>
+            style={{ background: "var(--blue)" }}>
             免費諮詢
             <ArrowRight size={16} weight="bold" />
           </Link>
