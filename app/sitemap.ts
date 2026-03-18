@@ -4,6 +4,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://expathome-hsinchu.vercel.app";
 
   return [
+    // Language roots
+    {
+      url: `${baseUrl}/en`,
+      lastModified: new Date("2025-03-18"),
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/ja`,
+      lastModified: new Date("2025-03-18"),
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
+    },
     {
       url: baseUrl,
       lastModified: new Date("2025-03-18"),

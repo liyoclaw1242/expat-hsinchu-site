@@ -60,7 +60,7 @@ export default function Header() {
             {/* Language */}
             <div className="hidden md:flex items-center gap-1.5 text-xs font-medium"
               style={{ color: "#6B7280" }}>
-              <span style={{ color: "#0F766E", fontWeight: 600 }}>中</span>
+              <Link href="/" style={{ color: "#0F766E", fontWeight: 600 }}>中</Link>
               <span className="opacity-30">/</span>
               <Link href="/en" className="hover:underline" style={{ color: "#6B7280" }}>EN</Link>
               <span className="opacity-30">/</span>
