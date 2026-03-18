@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 import { List, X } from "@phosphor-icons/react";
 import ThemeToggle from "./ThemeToggle";
 
@@ -58,22 +59,15 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href={locale === "en" ? "/en" : locale === "ja" ? "/ja" : "/"} className="flex items-center gap-3">
-            <div
-              className="w-8 h-8 rounded-lg flex items-center justify-center text-white text-sm font-bold"
-              style={{ background: "#0F766E" }}
-            >
-              E
-            </div>
-            <div className="leading-none">
-              <span className="text-[15px] font-semibold tracking-tight" style={{ color: "#0A1F1E" }}>
-                EasyRent
-              </span>
-              <span className="text-[11px] block font-medium" style={{ color: "#0F766E" }}>
-                易澤居
-                Hsinchu
-              </span>
-            </div>
+          <Link href={locale === "en" ? "/en" : locale === "ja" ? "/ja" : "/"} className="flex items-center">
+            <Image
+              src="/images/logo-easyrent.png"
+              alt="易澤居 EasyRent"
+              width={150}
+              height={60}
+              className="h-9 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Nav */}

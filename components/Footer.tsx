@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, EnvelopeSimple, ChatCircle } from "@phosphor-icons/react/dist/ssr";
 
 export default function Footer() {
@@ -9,13 +10,14 @@ export default function Footer() {
 
           {/* Brand */}
           <div className="md:col-span-2">
-            <Link href="/" className="flex items-center gap-2.5 mb-5 w-fit">
-              <div className="w-8 h-8 rounded-lg flex items-center justify-center text-white text-sm font-bold"
-                style={{ background: "var(--teal)" }}>E</div>
-              <div className="leading-none">
-                <span className="text-[15px] font-semibold tracking-tight text-white">EasyRent</span>
-                <span className="text-[11px] block font-medium" style={{ color: "#5EEAD4" }}>新竹</span>
-              </div>
+            <Link href="/" className="flex items-center mb-5 w-fit">
+              <Image
+                src="/images/logo-easyrent.png"
+                alt="易澤居 EasyRent"
+                width={150}
+                height={60}
+                className="h-9 w-auto brightness-0 invert"
+              />
             </Link>
             <p className="text-sm leading-relaxed mb-1.5 max-w-[38ch] text-pretty" style={{ color: "oklch(75% 0.015 178)" }}>
               新竹最專業的外商租屋代管服務。英語・日語・中文，全程三語服務。
