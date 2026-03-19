@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Phone, EnvelopeSimple, ChatCircle } from "@phosphor-icons/react/dist/ssr";
 
@@ -89,13 +88,15 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <Link href={logoHref} className="flex items-center mb-5 w-fit">
-              <Image
-                src="/images/logo-easyrent.png"
-                alt="易澤居 EasyRent"
-                width={150}
-                height={60}
-                className="h-9 w-auto brightness-0 invert"
-              />
+              <div
+                className="w-8 h-8 rounded-lg flex items-center justify-center text-white text-sm font-bold"
+                style={{ background: "var(--teal)" }}
+              >
+                E
+              </div>
+              <span className="ml-2.5 text-[15px] font-semibold tracking-tight text-white">
+                易澤居
+              </span>
             </Link>
             <p className="text-sm leading-relaxed mb-1.5 max-w-[38ch] text-pretty" style={{ color: "oklch(75% 0.015 178)" }}>
               {tagline[locale].main}
