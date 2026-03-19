@@ -71,7 +71,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t flex flex-col md:flex-row justify-between items-center gap-3"
           style={{ borderColor: "oklch(25% 0.01 178)" }}>
-          <p className="text-xs" style={{ color: "#818990" }}>© 2025 易澤居 EasyRent. 版權所有。</p>
+          <p className="text-xs" style={{ color: "#818990" }}>© {new Date().getFullYear()} 易澤居 EasyRent. 版權所有。</p>
           <p className="text-xs" style={{ color: "#818990" }}>服務區域：新竹市・新竹縣・竹北市・竹科</p>
         </div>
       </div>
