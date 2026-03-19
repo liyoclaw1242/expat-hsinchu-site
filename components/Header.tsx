@@ -18,17 +18,17 @@ const navByLocale: Record<Locale, { href: string; label: string }[]> = {
   ],
   en: [
     { href: "/en", label: "Home" },
-    { href: "/services", label: "Services" },
-    { href: "/properties", label: "Properties" },
+    { href: "/en/services", label: "Services" },
+    { href: "/en/properties", label: "Properties" },
     { href: "/blog", label: "Guides" },
-    { href: "/about", label: "About" },
+    { href: "/en/about", label: "About" },
   ],
   ja: [
     { href: "/ja", label: "ホーム" },
-    { href: "/services", label: "サービス" },
-    { href: "/properties", label: "物件" },
+    { href: "/ja/services", label: "サービス" },
+    { href: "/ja/properties", label: "物件" },
     { href: "/blog", label: "ガイド" },
-    { href: "/about", label: "会社概要" },
+    { href: "/ja/about", label: "会社概要" },
   ],
 };
 
@@ -118,7 +118,7 @@ export default function Header() {
 
             {/* CTA */}
             <Link
-              href="/contact"
+              href={locale === "en" ? "/en/contact" : locale === "ja" ? "/ja/contact" : "/contact"}
               className="hidden md:inline-flex items-center text-[13.5px] font-semibold px-4 py-2 rounded-lg text-white transition-colors"
               style={{ background: "#0369A1" }}
             >
@@ -162,7 +162,7 @@ export default function Header() {
             </div>
             <div className="pt-1">
               <Link
-                href="/contact"
+                href={locale === "en" ? "/en/contact" : locale === "ja" ? "/ja/contact" : "/contact"}
                 className="block text-center py-2.5 text-sm font-semibold rounded-lg text-white"
                 style={{ background: "#0369A1" }}
                 onClick={() => setOpen(false)}
