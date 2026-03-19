@@ -10,24 +10,24 @@ type Locale = "zh" | "en" | "ja";
 
 const navByLocale: Record<Locale, { href: string; label: string }[]> = {
   zh: [
-    { href: "/", label: "首頁" },
-    { href: "/services", label: "服務" },
-    { href: "/properties", label: "房源" },
-    { href: "/blog", label: "指南" },
-    { href: "/about", label: "關於" },
+    { href: "/zh", label: "首頁" },
+    { href: "/zh/services", label: "服務" },
+    { href: "/zh/properties", label: "房源" },
+    { href: "/zh/blog", label: "指南" },
+    { href: "/zh/about", label: "關於" },
   ],
   en: [
     { href: "/en", label: "Home" },
     { href: "/en/services", label: "Services" },
     { href: "/en/properties", label: "Properties" },
-    { href: "/blog", label: "Guides" },
+    { href: "/en/blog", label: "Guides" },
     { href: "/en/about", label: "About" },
   ],
   ja: [
     { href: "/ja", label: "ホーム" },
     { href: "/ja/services", label: "サービス" },
     { href: "/ja/properties", label: "物件" },
-    { href: "/blog", label: "ガイド" },
+    { href: "/ja/blog", label: "ガイド" },
     { href: "/ja/about", label: "会社概要" },
   ],
 };
@@ -41,7 +41,7 @@ const ctaByLocale: Record<Locale, string> = {
 function detectLocale(pathname: string): Locale {
   if (pathname.startsWith("/en")) return "en";
   if (pathname.startsWith("/ja")) return "ja";
-  return "zh";
+  return "zh"; // covers /zh and any fallback
 }
 
 export default function Header() {
@@ -59,7 +59,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href={locale === "en" ? "/en" : locale === "ja" ? "/ja" : "/"} className="flex items-center gap-2.5">
+          <Link href={locale === "en" ? "/en" : locale === "ja" ? "/ja" : "/zh"} className="flex items-center gap-2.5">
             <div
               className="w-8 h-8 rounded-lg flex items-center justify-center text-white text-sm font-bold"
               style={{ background: "var(--teal)" }}
