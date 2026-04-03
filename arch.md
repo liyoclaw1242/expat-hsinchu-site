@@ -143,12 +143,22 @@ _No API routes exist._ This is a static marketing site with no backend. All cont
 | Blog teasers in zh page link to non-existent blog routes | Broken links on zh homepage | High | QA #2 will flag |
 | Header nav hover styles hardcode light-mode colors (`#374151`, `hover:bg-teal-50`) — not dark-mode aware | Broken styling in dark mode | Medium | Design #3 will flag |
 
-### Active Decomposition (from #1)
+### Completed Audits (from #1)
+| # | Title | Agent | Status |
+|---|-------|-------|--------|
+| #2 | QA: 全站多語系路由測試 + 操作行為審查 | qa | done |
+| #3 | Design: 全站視覺審查（三語 + 三 breakpoint + Dark mode） | design | done |
+| #4 | FE: Playwright E2E 測試基礎建設 + 多語系路由 test suite | fe | blocked (#2) |
+
+### Active Fix Tasks (from QA #2 + Design #3 triage)
 | # | Title | Agent | Deps | Status |
 |---|-------|-------|------|--------|
-| #2 | QA: 全站多語系路由測試 + 操作行為審查 | qa | — | ready |
-| #3 | Design: 全站視覺審查（三語 + 三 breakpoint + Dark mode） | design | — | ready |
-| #4 | FE: Playwright E2E 測試基礎建設 + 多語系路由 test suite | fe | #2 | blocked |
+| #5 | FE: Header dark mode — replace hardcoded colors with CSS vars | fe | — | ready |
+| #6 | FE: Dynamic `<html lang>` attribute per locale | fe | — | ready |
+| #7 | FE: Fix all internal links to include locale prefix | fe | — | ready |
+| #8 | FE: SEO fixes — hreflang, sitemap, canonical, OG, robots | fe | — | ready |
+| #9 | FE: Dark mode polish — process borders, trust bar, card-lift | fe | #5 | blocked |
+| #10 | QA: Verify fixes from audit round 1 (#5-#9) | qa | #5-#9 | blocked |
 
 ### Planned Features (inferred from nav/sitemap)
 | Feature | Domain Impact | Dependencies |
