@@ -77,8 +77,8 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="px-3.5 py-2 text-[13.5px] font-medium rounded-lg transition-colors duration-150 hover:text-teal-700 hover:bg-teal-50"
-                style={{ color: "#374151" }}
+                className="px-3.5 py-2 text-[13.5px] font-medium rounded-lg transition-colors duration-150 hover:text-[var(--teal)] hover:bg-[var(--surface)]"
+                style={{ color: "var(--text-secondary)" }}
               >
                 {item.label}
               </Link>
@@ -91,23 +91,23 @@ export default function Header() {
               <Link
                 href="/"
                 className="transition-colors"
-                style={{ color: locale === "zh" ? "#0F766E" : "#9CA3AF", fontWeight: locale === "zh" ? 700 : 500 }}
+                style={{ color: locale === "zh" ? "var(--teal)" : "var(--text-subtle)", fontWeight: locale === "zh" ? 700 : 500 }}
               >
                 中
               </Link>
-              <span style={{ color: "#E5E7EB" }}>/</span>
+              <span style={{ color: "var(--border)" }}>/</span>
               <Link
                 href="/en"
                 className="transition-colors"
-                style={{ color: locale === "en" ? "#0F766E" : "#9CA3AF", fontWeight: locale === "en" ? 700 : 500 }}
+                style={{ color: locale === "en" ? "var(--teal)" : "var(--text-subtle)", fontWeight: locale === "en" ? 700 : 500 }}
               >
                 EN
               </Link>
-              <span style={{ color: "#E5E7EB" }}>/</span>
+              <span style={{ color: "var(--border)" }}>/</span>
               <Link
                 href="/ja"
                 className="transition-colors"
-                style={{ color: locale === "ja" ? "#0F766E" : "#9CA3AF", fontWeight: locale === "ja" ? 700 : 500 }}
+                style={{ color: locale === "ja" ? "var(--teal)" : "var(--text-subtle)", fontWeight: locale === "ja" ? 700 : 500 }}
               >
                 日
               </Link>
@@ -120,7 +120,7 @@ export default function Header() {
             <Link
               href={locale === "en" ? "/en/contact" : locale === "ja" ? "/ja/contact" : "/contact"}
               className="hidden md:inline-flex items-center text-[13.5px] font-semibold px-4 py-2 rounded-lg text-white transition-colors"
-              style={{ background: "#0369A1" }}
+              style={{ background: "var(--blue)" }}
             >
               {cta}
             </Link>
@@ -132,9 +132,9 @@ export default function Header() {
               aria-label="Toggle menu"
             >
               {open ? (
-                <X size={20} weight="bold" style={{ color: "#374151" }} />
+                <X size={20} weight="bold" style={{ color: "var(--text-secondary)" }} />
               ) : (
-                <List size={20} weight="bold" style={{ color: "#374151" }} />
+                <List size={20} weight="bold" style={{ color: "var(--text-secondary)" }} />
               )}
             </button>
           </div>
@@ -142,13 +142,13 @@ export default function Header() {
 
         {/* Mobile Nav */}
         {open && (
-          <div className="md:hidden py-3 border-t space-y-0.5" style={{ borderColor: "#99F6E4" }}>
+          <div className="md:hidden py-3 border-t space-y-0.5" style={{ borderColor: "var(--border)" }}>
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 className="block px-3 py-2.5 text-sm font-medium rounded-lg"
-                style={{ color: "#374151" }}
+                style={{ color: "var(--text-secondary)" }}
                 onClick={() => setOpen(false)}
               >
                 {item.label}
@@ -156,15 +156,15 @@ export default function Header() {
             ))}
             {/* Mobile language switcher */}
             <div className="flex items-center gap-3 px-3 py-2 text-xs font-medium">
-              <Link href="/" style={{ color: locale === "zh" ? "#0F766E" : "#9CA3AF" }} onClick={() => setOpen(false)}>中文</Link>
-              <Link href="/en" style={{ color: locale === "en" ? "#0F766E" : "#9CA3AF" }} onClick={() => setOpen(false)}>English</Link>
-              <Link href="/ja" style={{ color: locale === "ja" ? "#0F766E" : "#9CA3AF" }} onClick={() => setOpen(false)}>日本語</Link>
+              <Link href="/" style={{ color: locale === "zh" ? "var(--teal)" : "var(--text-subtle)" }} onClick={() => setOpen(false)}>中文</Link>
+              <Link href="/en" style={{ color: locale === "en" ? "var(--teal)" : "var(--text-subtle)" }} onClick={() => setOpen(false)}>English</Link>
+              <Link href="/ja" style={{ color: locale === "ja" ? "var(--teal)" : "var(--text-subtle)" }} onClick={() => setOpen(false)}>日本語</Link>
             </div>
             <div className="pt-1">
               <Link
                 href={locale === "en" ? "/en/contact" : locale === "ja" ? "/ja/contact" : "/contact"}
                 className="block text-center py-2.5 text-sm font-semibold rounded-lg text-white"
-                style={{ background: "#0369A1" }}
+                style={{ background: "var(--blue)" }}
                 onClick={() => setOpen(false)}
               >
                 {cta}
