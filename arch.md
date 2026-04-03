@@ -133,15 +133,22 @@ _No API routes exist._ This is a static marketing site with no backend. All cont
 - 2026-03: Each locale page is a fully independent component (not shared template + translation keys for page body)
 
 ### Known Tech Debt
-| Item | Impact | Priority |
-|------|--------|----------|
-| 6 pages referenced in nav/sitemap don't exist yet | Broken navigation, 404s | High |
-| zh page translations in `lib/i18n.ts` are used by Header/Footer but NOT by page body (pages hardcode content) | Dual content sources — Header uses i18n.ts, pages have inline strings | Medium |
-| No `<html lang>` per locale — root layout hardcodes `lang="zh-TW"` | Accessibility / SEO issue for /en and /ja pages | High |
-| No test coverage | Zero tests | Medium |
-| Hardcoded contact info (LINE ID, WhatsApp, email) in Footer.tsx | Must update in code for changes | Low |
-| Blog teasers in zh page link to non-existent blog routes | Broken links on zh homepage | High |
-| Header nav hover styles hardcode light-mode colors (`#374151`, `hover:bg-teal-50`) — not dark-mode aware | Broken styling in dark mode | Medium |
+| Item | Impact | Priority | Tracking |
+|------|--------|----------|----------|
+| 6 pages referenced in nav/sitemap don't exist yet | Broken navigation, 404s | High | — |
+| zh page translations in `lib/i18n.ts` are used by Header/Footer but NOT by page body (pages hardcode content) | Dual content sources — Header uses i18n.ts, pages have inline strings | Medium | — |
+| No `<html lang>` per locale — root layout hardcodes `lang="zh-TW"` | Accessibility / SEO issue for /en and /ja pages | High | QA #2 will flag |
+| No test coverage | Zero tests | Medium | FE #4 (Playwright setup) |
+| Hardcoded contact info (LINE ID, WhatsApp, email) in Footer.tsx | Must update in code for changes | Low | — |
+| Blog teasers in zh page link to non-existent blog routes | Broken links on zh homepage | High | QA #2 will flag |
+| Header nav hover styles hardcode light-mode colors (`#374151`, `hover:bg-teal-50`) — not dark-mode aware | Broken styling in dark mode | Medium | Design #3 will flag |
+
+### Active Decomposition (from #1)
+| # | Title | Agent | Deps | Status |
+|---|-------|-------|------|--------|
+| #2 | QA: 全站多語系路由測試 + 操作行為審查 | qa | — | ready |
+| #3 | Design: 全站視覺審查（三語 + 三 breakpoint + Dark mode） | design | — | ready |
+| #4 | FE: Playwright E2E 測試基礎建設 + 多語系路由 test suite | fe | #2 | blocked |
 
 ### Planned Features (inferred from nav/sitemap)
 | Feature | Domain Impact | Dependencies |
