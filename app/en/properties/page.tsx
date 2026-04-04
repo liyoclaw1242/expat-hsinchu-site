@@ -69,7 +69,7 @@ export default function EnPropertiesPage() {
                   <div className="flex flex-wrap gap-1.5 mb-5">
                     {p.features.map((f) => <span key={f} className="text-[11px] px-2.5 py-1 rounded-md font-medium" style={{ background: "var(--surface)", color: "var(--teal)" }}>{f}</span>)}
                   </div>
-                  <Link href="/contact" className="flex w-full items-center justify-center gap-2 py-2.5 rounded-lg text-sm font-semibold text-white" style={{ background: "var(--blue)" }}>
+                  <Link href="/en/contact" className="flex w-full items-center justify-center gap-2 py-2.5 rounded-lg text-sm font-semibold text-white" style={{ background: "var(--blue)" }}>
                     Enquire about this property <ArrowRight size={15} weight="bold" />
                   </Link>
                 </div>
@@ -81,7 +81,7 @@ export default function EnPropertiesPage() {
               <h2 className="text-xl font-bold tracking-tight" style={{ color: "var(--text)" }}>Don't see what you need?</h2>
               <p className="text-sm mt-1" style={{ color: "var(--text-muted)" }}>Tell us your requirements — we'll search across Zhubei and Hsinchu</p>
             </div>
-            <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold text-white flex-shrink-0" style={{ background: "var(--blue)" }}>
+            <Link href="/en/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold text-white flex-shrink-0" style={{ background: "var(--blue)" }}>
               Tell us what you need <ArrowRight size={15} weight="bold" />
             </Link>
           </div>

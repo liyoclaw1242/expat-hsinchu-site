@@ -108,7 +108,7 @@ export default function EnAboutPage() {
             <p className="text-base font-semibold" style={{ color: "var(--text)" }}>Questions? Let's talk.</p>
             <p className="text-sm mt-0.5" style={{ color: "var(--text-muted)" }}>English, Japanese, or Chinese — free consultation</p>
           </div>
-          <Link href="/contact" className="inline-flex items-center gap-2 px-7 py-3 rounded-lg text-sm font-semibold text-white flex-shrink-0" style={{ background: "var(--blue)" }}>
+          <Link href="/en/contact" className="inline-flex items-center gap-2 px-7 py-3 rounded-lg text-sm font-semibold text-white flex-shrink-0" style={{ background: "var(--blue)" }}>
             Contact us <ArrowRight size={15} weight="bold" />
           </Link>
         </div>

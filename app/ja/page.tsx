@@ -70,10 +70,10 @@ export default function JapaneseHomePage() {
           </p>
 
           <div className="flex flex-wrap gap-3">
-            <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold text-white" style={{ background: "var(--blue)" }}>
+            <Link href="/ja/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold text-white" style={{ background: "var(--blue)" }}>
               無料相談 <ArrowRight size={16} weight="bold" />
             </Link>
-            <Link href="/properties" className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold border" style={{ borderColor: "oklch(80% 0.1 178 / 0.4)", color: "#F0FDFA" }}>
+            <Link href="/ja/properties" className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold border" style={{ borderColor: "oklch(80% 0.1 178 / 0.4)", color: "#F0FDFA" }}>
               物件を見る
             </Link>
           </div>
@@ -191,10 +191,10 @@ export default function JapaneseHomePage() {
             日本語・英語・中国語で無料相談承ります。ご要望をお聞かせください。
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
-            <Link href="/contact" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg font-semibold text-sm" style={{ background: "var(--card-bg)", color: "var(--blue)" }}>
+            <Link href="/ja/contact" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg font-semibold text-sm" style={{ background: "var(--card-bg)", color: "var(--blue)" }}>
               LINEで相談 <ArrowRight size={16} weight="bold" />
             </Link>
-            <Link href="/contact" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg font-semibold text-sm border text-white" style={{ borderColor: "rgba(255,255,255,0.4)" }}>
+            <Link href="/ja/contact" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg font-semibold text-sm border text-white" style={{ borderColor: "rgba(255,255,255,0.4)" }}>
               メールで相談
             </Link>
           </div>

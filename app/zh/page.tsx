@@ -165,7 +165,7 @@ export default function HomePage() {
 
           <div className="flex flex-wrap gap-3">
             <Link
-              href="/contact"
+              href="/zh/contact"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold text-white transition-colors"
               style={{ background: "var(--blue)" }}
             >
@@ -173,7 +173,7 @@ export default function HomePage() {
               <ArrowRight size={16} weight="bold" />
             </Link>
             <Link
-              href="/properties"
+              href="/zh/properties"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold border transition-colors"
               style={{ borderColor: "oklch(80% 0.1 178 / 0.4)", color: "#F0FDFA", background: "transparent" }}
             >
@@ -329,7 +329,7 @@ export default function HomePage() {
                 深度內容，<br />幫你在新竹找到家
               </h2>
             </div>
-            <Link href="/blog"
+            <Link href="/zh/blog"
               className="hidden md:inline-flex items-center gap-1.5 text-sm font-medium transition-colors"
               style={{ color: "#5EEAD4" }}>
               查看全部 <ArrowRight size={16} weight="bold" />
@@ -405,13 +405,13 @@ export default function HomePage() {
             免費諮詢，英日中均可溝通。告訴我們您的需求，我們為您量身配對。
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
-            <Link href="/contact"
+            <Link href="/zh/contact"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg font-semibold text-sm transition-colors"
               style={{ background: "var(--card-bg)", color: "var(--blue)" }}>
               LINE 免費諮詢
               <ArrowRight size={16} weight="bold" />
             </Link>
-            <Link href="/contact"
+            <Link href="/zh/contact"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg font-semibold text-sm border transition-colors text-white"
               style={{ borderColor: "rgba(255,255,255,0.4)", background: "transparent" }}>
               Email 聯絡

@@ -154,7 +154,7 @@ export default function PropertiesPage() {
                     ))}
                   </div>
 
-                  <Link href="/contact"
+                  <Link href="/zh/contact"
                     className="flex w-full items-center justify-center gap-2 py-2.5 rounded-lg text-sm font-semibold text-white transition-colors"
                     style={{ background: "var(--blue)" }}>
                     詢問這間房源
@@ -172,7 +172,7 @@ export default function PropertiesPage() {
               <h2 className="text-xl font-bold tracking-tight" style={{ color: "var(--text)" }}>找不到喜歡的？</h2>
               <p className="text-sm mt-1" style={{ color: "var(--text-muted)" }}>告訴我們您的需求，竹北、新竹全都找</p>
             </div>
-            <Link href="/contact"
+            <Link href="/zh/contact"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold text-white flex-shrink-0"
               style={{ background: "var(--blue)" }}>
               說說你的需求 <ArrowRight size={15} weight="bold" />
