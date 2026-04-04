@@ -129,7 +129,7 @@ export default function EnServicesPage() {
             <h2 className="text-2xl font-bold tracking-tight" style={{ color: "var(--text)" }}>Free Consultation</h2>
             <p className="text-sm mt-1" style={{ color: "var(--text-muted)" }}>English, Japanese, or Chinese — we speak your language</p>
           </div>
-          <Link href="/contact" className="inline-flex items-center gap-2 px-7 py-3 rounded-lg text-sm font-semibold text-white flex-shrink-0" style={{ background: "var(--blue)" }}>
+          <Link href="/en/contact" className="inline-flex items-center gap-2 px-7 py-3 rounded-lg text-sm font-semibold text-white flex-shrink-0" style={{ background: "var(--blue)" }}>
             Get in touch <ArrowRight size={16} weight="bold" />
           </Link>
         </div>

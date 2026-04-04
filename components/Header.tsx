@@ -89,7 +89,7 @@ export default function Header() {
             {/* Language switcher */}
             <div className="hidden md:flex items-center gap-1.5 text-xs font-medium">
               <Link
-                href="/"
+                href="/zh"
                 className="transition-colors"
                 style={{ color: locale === "zh" ? "var(--teal)" : "var(--text-subtle)", fontWeight: locale === "zh" ? 700 : 500 }}
               >
@@ -118,7 +118,7 @@ export default function Header() {
 
             {/* CTA */}
             <Link
-              href={locale === "en" ? "/en/contact" : locale === "ja" ? "/ja/contact" : "/contact"}
+              href={locale === "en" ? "/en/contact" : locale === "ja" ? "/ja/contact" : "/zh/contact"}
               className="hidden md:inline-flex items-center text-[13.5px] font-semibold px-4 py-2 rounded-lg text-white transition-colors"
               style={{ background: "var(--blue)" }}
             >
@@ -156,13 +156,13 @@ export default function Header() {
             ))}
             {/* Mobile language switcher */}
             <div className="flex items-center gap-3 px-3 py-2 text-xs font-medium">
-              <Link href="/" style={{ color: locale === "zh" ? "var(--teal)" : "var(--text-subtle)" }} onClick={() => setOpen(false)}>中文</Link>
+              <Link href="/zh" style={{ color: locale === "zh" ? "var(--teal)" : "var(--text-subtle)" }} onClick={() => setOpen(false)}>中文</Link>
               <Link href="/en" style={{ color: locale === "en" ? "var(--teal)" : "var(--text-subtle)" }} onClick={() => setOpen(false)}>English</Link>
               <Link href="/ja" style={{ color: locale === "ja" ? "var(--teal)" : "var(--text-subtle)" }} onClick={() => setOpen(false)}>日本語</Link>
             </div>
             <div className="pt-1">
               <Link
-                href={locale === "en" ? "/en/contact" : locale === "ja" ? "/ja/contact" : "/contact"}
+                href={locale === "en" ? "/en/contact" : locale === "ja" ? "/ja/contact" : "/zh/contact"}
                 className="block text-center py-2.5 text-sm font-semibold rounded-lg text-white"
                 style={{ background: "var(--blue)" }}
                 onClick={() => setOpen(false)}
