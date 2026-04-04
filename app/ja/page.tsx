@@ -92,7 +92,7 @@ export default function JapaneseHomePage() {
       {/* ── TRUST BAR ── */}
       <section className="border-b py-4" style={{ background: "var(--surface)", borderColor: "var(--border)" }}>
         <div className="max-w-7xl mx-auto px-6 flex flex-wrap items-center justify-center gap-x-8 gap-y-1.5">
-          <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: "#4a938d" }}>対応企業（一部）</span>
+          <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: "var(--teal)" }}>対応企業（一部）</span>
           {["ASML", "東京エレクトロン", "ラムリサーチ", "KLA", "Synopsys", "アプライドマテリアルズ"].map((c) => (
             <span key={c} className="text-sm font-semibold" style={{ color: "var(--text-subtle)" }}>{c}</span>
           ))}
@@ -138,7 +138,7 @@ export default function JapaneseHomePage() {
               ご相談から入居まで、5ステップ
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-px border rounded-2xl overflow-hidden" style={{ borderColor: "var(--border)", background: "#99F6E4" }}>
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-px border rounded-2xl overflow-hidden" style={{ borderColor: "var(--border)", background: "var(--border)" }}>
             {steps.map((s) => (
               <div key={s.n} className="p-6 flex flex-col gap-4" style={{ background: "var(--surface)" }}>
                 <span aria-hidden="true" className="text-3xl font-bold tabular-nums" style={{ color: "var(--teal)", opacity: 0.25 }}>{s.n}</span>
