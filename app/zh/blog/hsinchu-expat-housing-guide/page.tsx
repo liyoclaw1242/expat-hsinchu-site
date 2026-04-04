@@ -268,7 +268,7 @@ export default function HsinchuExpatGuide() {
             易澤居 EasyRent 提供免費諮詢，英日中均可溝通。
           </p>
           <a
-            href="/contact"
+            href="/zh/contact"
             className="inline-block bg-white text-indigo-700 px-8 py-3 rounded-xl font-bold hover:bg-indigo-50 transition-colors"
           >
             免費諮詢 →

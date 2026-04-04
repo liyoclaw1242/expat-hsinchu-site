@@ -198,7 +198,7 @@ export default function ASMLHousingGuide() {
             Free consultation in English, Japanese, or Chinese. We know what ASML expats need.
           </p>
           <a
-            href="/contact"
+            href="/zh/contact"
             className="inline-block bg-white text-indigo-700 px-8 py-3 rounded-xl font-bold hover:bg-indigo-50 transition-colors"
           >
             Get Free Consultation →

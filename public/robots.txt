@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.easyrents.xyz
+
+# Sitemaps
+Sitemap: https://www.easyrents.xyz/sitemap.xml

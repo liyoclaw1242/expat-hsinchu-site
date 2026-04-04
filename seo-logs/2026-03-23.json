@@ -1,0 +1,26 @@
+{
+  "date": "2026-03-23",
+  "our_site": {
+    "http_status": "307",
+    "sitemap_status": "200"
+  },
+  "competitor": {
+    "http_status": "200"
+  },
+  "gsc": {
+    "keywords": [],
+    "totals": {
+      "clicks": 0,
+      "impressions": 2,
+      "avg_ctr": 0,
+      "avg_position": 1
+    },
+    "pages": [
+      {
+        "page": "/",
+        "clicks": 0,
+        "impressions": 2
+      }
+    ]
+  }
+}

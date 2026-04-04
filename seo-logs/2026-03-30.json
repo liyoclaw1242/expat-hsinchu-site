@@ -1,0 +1,16 @@
+{
+  "date": "2026-03-30",
+  "our_site": {
+    "http_status": "307",
+    "sitemap_status": "200"
+  },
+  "competitor": {
+    "http_status": "200"
+  },
+  "gsc": {
+    "keywords": [],
+    "totals": {},
+    "pages": [],
+    "error": "('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})"
+  }
+}
