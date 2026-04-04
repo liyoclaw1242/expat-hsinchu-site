@@ -202,7 +202,7 @@ export default function HomePage() {
       <section className="border-b py-4" style={{ background: "var(--surface)", borderColor: "var(--border)" }}>
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-1.5">
-            <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: "#3d7870" }}>
+            <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: "var(--teal)" }}>
               服務外商員工包含
             </span>
             {companies.map((c) => (
@@ -267,7 +267,7 @@ export default function HomePage() {
 
           {/* Steps: use border-l for visual connection, not identical cards */}
           <div className="grid grid-cols-1 md:grid-cols-5 gap-px border rounded-2xl overflow-hidden"
-            style={{ borderColor: "var(--border)", background: "#99F6E4" }}>
+            style={{ borderColor: "var(--border)", background: "var(--border)" }}>
             {steps.map((s) => (
               <div key={s.n} className="p-6 flex flex-col gap-4"
                 style={{ background: "var(--surface)" }}>
