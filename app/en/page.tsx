@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.easyrents.xyz/en",
     languages: {
-      "zh-TW": "https://www.easyrents.xyz",
+      "zh-TW": "https://www.easyrents.xyz/zh",
       "en-US": "https://www.easyrents.xyz/en",
       "ja-JP": "https://www.easyrents.xyz/ja",
     },
