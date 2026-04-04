@@ -164,7 +164,7 @@ export default function AboutPage() {
             <p className="text-base font-semibold" style={{ color: "var(--text)" }}>有問題嗎？直接聯絡我們。</p>
             <p className="text-sm mt-0.5" style={{ color: "var(--text-muted)" }}>英日中均可溝通，免費諮詢</p>
           </div>
-          <Link href="/contact"
+          <Link href="/zh/contact"
             className="inline-flex items-center gap-2 px-7 py-3 rounded-lg text-sm font-semibold text-white flex-shrink-0"
             style={{ background: "var(--blue)" }}>
             聯絡我們 <ArrowRight size={15} weight="bold" />

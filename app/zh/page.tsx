@@ -85,21 +85,21 @@ const testimonials = [
 
 const blogPosts = [
   {
-    href: "/blog/hsinchu-expat-housing-guide",
+    href: "/zh/blog/hsinchu-expat-housing-guide",
     tag: "完整指南",
     title: "2025 新竹外派租屋完整指南",
     desc: "從選區域、找房到簽約，含英語服務資源與住宿補貼流程。",
     meta: "8 min · 中文 · EN",
   },
   {
-    href: "/blog/zhubei-expat-apartments",
+    href: "/zh/blog/zhubei-expat-apartments",
     tag: "區域比較",
     title: "竹北高鐵特區 vs 關埔重劃區",
     desc: "交通、機能、租金行情，找到最適合你的外商公寓。",
     meta: "6 min · 中文",
   },
   {
-    href: "/blog/asml-employee-housing-hsinchu",
+    href: "/zh/blog/asml-employee-housing-hsinchu",
     tag: "ASML 專屬",
     title: "ASML 員工新竹住宿完整指南",
     desc: "住宿補貼申請流程、推薦房型，中英雙語。",
@@ -165,7 +165,7 @@ export default function HomePage() {
 
           <div className="flex flex-wrap gap-3">
             <Link
-              href="/contact"
+              href="/zh/contact"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold text-white transition-colors"
               style={{ background: "var(--blue)" }}
             >
@@ -173,7 +173,7 @@ export default function HomePage() {
               <ArrowRight size={16} weight="bold" />
             </Link>
             <Link
-              href="/properties"
+              href="/zh/properties"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold border transition-colors"
               style={{ borderColor: "oklch(80% 0.1 178 / 0.4)", color: "#F0FDFA", background: "transparent" }}
             >
@@ -329,7 +329,7 @@ export default function HomePage() {
                 深度內容，<br />幫你在新竹找到家
               </h2>
             </div>
-            <Link href="/blog"
+            <Link href="/zh/blog"
               className="hidden md:inline-flex items-center gap-1.5 text-sm font-medium transition-colors"
               style={{ color: "#5EEAD4" }}>
               查看全部 <ArrowRight size={16} weight="bold" />
@@ -405,13 +405,13 @@ export default function HomePage() {
             免費諮詢，英日中均可溝通。告訴我們您的需求，我們為您量身配對。
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
-            <Link href="/contact"
+            <Link href="/zh/contact"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg font-semibold text-sm transition-colors"
               style={{ background: "var(--card-bg)", color: "var(--blue)" }}>
               LINE 免費諮詢
               <ArrowRight size={16} weight="bold" />
             </Link>
-            <Link href="/contact"
+            <Link href="/zh/contact"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg font-semibold text-sm border transition-colors text-white"
               style={{ borderColor: "rgba(255,255,255,0.4)", background: "transparent" }}>
               Email 聯絡

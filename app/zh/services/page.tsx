@@ -240,7 +240,7 @@ export default function ServicesPage() {
             <h2 className="text-2xl font-bold tracking-tight" style={{ color: "var(--text)" }}>立即免費諮詢</h2>
             <p className="text-sm mt-1" style={{ color: "var(--text-muted)" }}>英日中均可，告訴我們您的需求</p>
           </div>
-          <Link href="/contact"
+          <Link href="/zh/contact"
             className="inline-flex items-center gap-2 px-7 py-3 rounded-lg text-sm font-semibold text-white flex-shrink-0"
             style={{ background: "var(--blue)" }}>
             免費諮詢

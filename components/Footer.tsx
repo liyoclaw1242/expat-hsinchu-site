@@ -9,7 +9,7 @@ export default function Footer() {
   const pathname = usePathname();
   const locale: Locale = pathname.startsWith("/en") ? "en" : pathname.startsWith("/ja") ? "ja" : "zh";
 
-  const logoHref = locale === "en" ? "/en" : locale === "ja" ? "/ja" : "/";
+  const logoHref = locale === "en" ? "/en" : locale === "ja" ? "/ja" : "/zh";
 
   const tagline: Record<Locale, { main: string; sub: string }> = {
     zh: {
@@ -34,23 +34,23 @@ export default function Footer() {
 
   const navLinks: Record<Locale, { href: string; label: string }[]> = {
     zh: [
-      { href: "/services", label: "代管服務" },
-      { href: "/properties", label: "精選房源" },
-      { href: "/blog", label: "租屋指南" },
-      { href: "/about", label: "關於我們" },
-      { href: "/contact", label: "聯絡我們" },
+      { href: "/zh/services", label: "代管服務" },
+      { href: "/zh/properties", label: "精選房源" },
+      { href: "/zh/blog", label: "租屋指南" },
+      { href: "/zh/about", label: "關於我們" },
+      { href: "/zh/contact", label: "聯絡我們" },
     ],
     en: [
       { href: "/en/services", label: "Services" },
       { href: "/en/properties", label: "Properties" },
-      { href: "/blog", label: "Guides" },
+      { href: "/en/blog", label: "Guides" },
       { href: "/en/about", label: "About" },
       { href: "/en/contact", label: "Contact" },
     ],
     ja: [
       { href: "/ja/services", label: "サービス" },
       { href: "/ja/properties", label: "物件" },
-      { href: "/blog", label: "ガイド" },
+      { href: "/ja/blog", label: "ガイド" },
       { href: "/ja/about", label: "会社概要" },
       { href: "/ja/contact", label: "お問い合わせ" },
     ],

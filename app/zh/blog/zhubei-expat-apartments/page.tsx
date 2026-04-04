@@ -175,7 +175,7 @@ export default function ZhubeiApartmentsGuide() {
           易澤居 EasyRent 在竹北兩大區域均有精選房源，免費為您配對。
         </p>
         <a
-          href="/properties"
+          href="/zh/properties"
           className="inline-block bg-white text-indigo-700 px-8 py-3 rounded-xl font-bold hover:bg-indigo-50 transition-colors"
         >
           查看精選房源 →
