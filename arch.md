@@ -137,28 +137,35 @@ _No API routes exist._ This is a static marketing site with no backend. All cont
 |------|--------|----------|----------|
 | 6 pages referenced in nav/sitemap don't exist yet | Broken navigation, 404s | High | — |
 | zh page translations in `lib/i18n.ts` are used by Header/Footer but NOT by page body (pages hardcode content) | Dual content sources — Header uses i18n.ts, pages have inline strings | Medium | — |
-| No `<html lang>` per locale — root layout hardcodes `lang="zh-TW"` | Accessibility / SEO issue for /en and /ja pages | High | QA #2 will flag |
-| No test coverage | Zero tests | Medium | FE #4 (Playwright setup) |
+| ~~No `<html lang>` per locale~~ | ~~Fixed~~ | ~~—~~ | Done (#6, PR #12) |
+| ~~No test coverage~~ | 68 E2E tests now | ~~—~~ | Done (#25, PR #28) |
 | Hardcoded contact info (LINE ID, WhatsApp, email) in Footer.tsx | Must update in code for changes | Low | — |
-| Blog teasers in zh page link to non-existent blog routes | Broken links on zh homepage | High | QA #2 will flag |
-| Header nav hover styles hardcode light-mode colors (`#374151`, `hover:bg-teal-50`) — not dark-mode aware | Broken styling in dark mode | Medium | Design #3 will flag |
+| ~~Blog teasers in zh page link to non-existent blog routes~~ | ~~Fixed~~ | ~~—~~ | Done (#22, PR #27) |
+| ~~Header nav hover styles hardcode light-mode colors~~ | ~~Fixed~~ | ~~—~~ | Done (#5, PR #11) |
+| 2 test artifact files committed (playwright-report/index.html, test-results/.last-run.json) | Minor repo clutter | Low | .gitignore now excludes these; can delete from tree |
+| SEO issues: hreflang, sitemap redirect URLs, OG image relative path, conflicting robots.txt | SEO degradation | High | #23 (in progress) |
 
 ### Completed Audits (from #1)
 | # | Title | Agent | Status |
 |---|-------|-------|--------|
 | #2 | QA: 全站多語系路由測試 + 操作行為審查 | qa | done |
 | #3 | Design: 全站視覺審查（三語 + 三 breakpoint + Dark mode） | design | done |
-| #4 | FE: Playwright E2E 測試基礎建設 + 多語系路由 test suite | fe | blocked (#2) |
+| #4/#25 | FE: Playwright E2E 測試基礎建設 + 多語系路由 test suite | fe | done (merged PR #28) |
 
-### Active Fix Tasks (from QA #2 + Design #3 triage)
+### Completed Fix Tasks (from QA #2 + Design #3 triage)
+| # | Title | Agent | Status |
+|---|-------|-------|--------|
+| #5 | FE: Header dark mode — replace hardcoded colors with CSS vars | fe | done (merged PR #11) |
+| #6 | FE: Dynamic `<html lang>` attribute per locale | fe | done (merged PR #12) |
+| #7/#22 | FE: Fix all internal links to include locale prefix | fe | done (merged PR #27) |
+| #10 | QA: Verify fixes from audit round 1 (#5-#9) | qa | done |
+
+### Active Fix Tasks
 | # | Title | Agent | Deps | Status |
 |---|-------|-------|------|--------|
-| #5 | FE: Header dark mode — replace hardcoded colors with CSS vars | fe | — | ready |
-| #6 | FE: Dynamic `<html lang>` attribute per locale | fe | — | ready |
-| #7 | FE: Fix all internal links to include locale prefix | fe | — | ready |
-| #8 | FE: SEO fixes — hreflang, sitemap, canonical, OG, robots | fe | — | ready |
-| #9 | FE: Dark mode polish — process borders, trust bar, card-lift | fe | #5 | blocked |
-| #10 | QA: Verify fixes from audit round 1 (#5-#9) | qa | #5-#9 | blocked |
+| #23 | FE: SEO fixes — hreflang, sitemap, canonical, OG, robots | fe | — | ready |
+| #24 | FE: Dark mode polish — process borders, trust bar, card-lift | fe | — | in-progress |
+| #26 | QA: Verify fixes round 2 (#22-#24) | qa | #22-#24 | blocked |
 
 ### Planned Features (inferred from nav/sitemap)
 | Feature | Domain Impact | Dependencies |
