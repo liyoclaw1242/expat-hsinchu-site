@@ -16,7 +16,14 @@ export const metadata: Metadata = {
   title: "易澤居 EasyRent | 新竹外商租屋專家 | 竹科外派住宅服務",
   description:
     "新竹最專業的外商租屋代管服務。英語・日語・中文三語全程服務，專為 ASML、竹科外派人員量身打造。竹北高鐵特區精選住宅，入住保障，與 Relocation Agent 深度合作。",
-  alternates: { canonical: "https://www.easyrents.xyz" },
+  alternates: {
+    canonical: "https://www.easyrents.xyz/zh",
+    languages: {
+      "zh-TW": "https://www.easyrents.xyz/zh",
+      "en-US": "https://www.easyrents.xyz/en",
+      "ja-JP": "https://www.easyrents.xyz/ja",
+    },
+  },
 };
 
 const features = [
