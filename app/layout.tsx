@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -84,13 +85,22 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+const LANG_MAP: Record<string, string> = {
+  zh: "zh-TW",
+  en: "en",
+  ja: "ja",
+};
+
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = (await headers()).get("x-locale") ?? "zh";
+  const lang = LANG_MAP[locale] ?? "zh-TW";
+
   return (
-    <html lang="zh-TW" suppressHydrationWarning>
+    <html lang={lang} suppressHydrationWarning>
       <head>
         <ThemeScript />
       </head>

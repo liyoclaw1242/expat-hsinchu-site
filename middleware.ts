@@ -43,8 +43,10 @@ export function middleware(req: NextRequest) {
   );
 
   if (pathnameLocale) {
-    // Update cookie to match current locale
-    const res = NextResponse.next();
+    // Update cookie to match current locale and pass locale to layout via request header
+    const headers = new Headers(req.headers);
+    headers.set("x-locale", pathnameLocale);
+    const res = NextResponse.next({ request: { headers } });
     res.cookies.set(COOKIE_NAME, pathnameLocale, { path: "/", maxAge: 60 * 60 * 24 * 365 });
     return res;
   }
