@@ -144,7 +144,7 @@ _No API routes exist._ This is a static marketing site with no backend. All cont
 | ~~Header nav hover styles hardcode light-mode colors~~ | ~~Fixed~~ | ~~—~~ | Done (#5, PR #11) |
 | ~~Dark mode polish (process borders, trust bar, card-lift)~~ | ~~Fixed~~ | ~~—~~ | Done (#24, PR #29) |
 | 2 test artifact files committed (playwright-report/index.html, test-results/.last-run.json) | Minor repo clutter | Low | .gitignore now excludes these; can delete from tree |
-| SEO issues: hreflang, sitemap redirect URLs, OG image relative path, conflicting robots.txt | SEO degradation | High | #23 (in progress) |
+| ~~SEO issues: hreflang, sitemap, OG image, robots.txt~~ | ~~Fixed~~ | ~~—~~ | Done (#23, PR #30) |
 
 ### Completed Audits (from #1)
 | # | Title | Agent | Status |
@@ -162,14 +162,14 @@ _No API routes exist._ This is a static marketing site with no backend. All cont
 | #10 | QA: Verify fixes from audit round 1 (#5-#9) | qa | done |
 
 ### Active Fix Tasks
-| # | Title | Agent | Deps | Status |
-|---|-------|-------|------|--------|
-| #26 | QA: Verify fixes round 2 (#22-#24) | qa | #22-#24 | ready (unblocked) |
+
+_None — all audit findings from rounds 1 & 2 are resolved and verified._
 
 ### Recently Completed
 | # | Title | Agent | Status |
 |---|-------|-------|--------|
 | #23 | FE: SEO fixes — hreflang, sitemap, canonical, OG, robots | fe | done (merged) |
+| #26 | QA: Verify fixes round 2 (#22-#24) | qa | done (13/13 PASS) |
 | #24 | FE: Dark mode polish — process borders, trust bar, card-lift | fe | done (merged PR #29) |
 
 ### Planned Features (inferred from nav/sitemap)
